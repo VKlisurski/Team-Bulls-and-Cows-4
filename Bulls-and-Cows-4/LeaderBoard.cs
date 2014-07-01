@@ -10,7 +10,6 @@
         private int maxCountOfStoredData;
         private T[] data;
         private int position = -1;
-
         private int count;
 
         public LeaderBoard()

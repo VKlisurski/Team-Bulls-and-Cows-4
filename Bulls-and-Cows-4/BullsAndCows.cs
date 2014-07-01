@@ -33,7 +33,7 @@
             Other
         }
 
-        public static void Main(string[] args)
+        public static void Main()
         {
             BullsAndCows game = new BullsAndCows();
             game.Start();
@@ -54,7 +54,7 @@
             this.generatedNumber = num.ToString();
         }
 
-        private PlayerCommand PlayerInputToPlayerCommand(string playerInput)
+        private PlayerCommand ParsePlayerCommand(string playerInput)
         {
             if (playerInput.ToLower() == "top")
             {
@@ -104,6 +104,7 @@
         private void Start()
         {
             PlayerCommand enteredCommand;
+
             do
             {
                 this.PrintWelcomeMessage();
@@ -116,7 +117,7 @@
                 {
                     Console.Write("Enter your guess or command: ");
                     string playerInput = Console.ReadLine();
-                    enteredCommand = this.PlayerInputToPlayerCommand(playerInput);
+                    enteredCommand = this.ParsePlayerCommand(playerInput);
 
                     if (enteredCommand == PlayerCommand.Top)
                     {
@@ -124,34 +125,28 @@
                     }
                     else if (enteredCommand == PlayerCommand.Help)
                     {
-                        cheats = this.PokajiHelp(cheats);
+                        cheats = this.DisplayHelp(cheats);
                     }
-                    else
+                    else if (this.IsValidNumber(playerInput))
                     {
-                        if (this.IsValidInput(playerInput))
+                        attempts++;
+                        int bullsCount;
+                        int cowsCount;
+                        this.CalculateBullsAndCowsCount(playerInput, this.generatedNumber, out bullsCount, out cowsCount);
+                        if (bullsCount == NUMBER_LENGHT)
                         {
-                            attempts++;
-                            int bullsCount;
-                            int cowsCount;
-                            this.CalculateBullsAndCowsCount(playerInput, this.generatedNumber, out bullsCount, out cowsCount);
-                            if (bullsCount == NUMBER_LENGHT)
-                            {
-                                this.PrintCongratulateMessage(attempts, cheats);
-                                this.FinishGame(attempts, cheats);
-                                break;
-                            }
-                            else
-                            {
-                                Console.WriteLine("Wrong number! Bulls: {0}, Cows: {1}", bullsCount, cowsCount);
-                            }
+                            this.PrintCongratulateMessage(attempts, cheats);
+                            this.FinishGame(attempts, cheats);
+                            break;
                         }
                         else
                         {
-                            if (enteredCommand != PlayerCommand.Restart && enteredCommand != PlayerCommand.Exit)
-                            {
-                                this.PrintWrongCommandMessage();
-                            }
+                            Console.WriteLine("Wrong number! Bulls: {0}, Cows: {1}", bullsCount, cowsCount);
                         }
+                    }
+                    else if (enteredCommand == PlayerCommand.Other)
+                    {
+                        this.PrintWrongCommandMessage();
                     }
                 }
                 while (enteredCommand != PlayerCommand.Exit && enteredCommand != PlayerCommand.Restart);
@@ -162,7 +157,7 @@
             Console.WriteLine("Good bye!");
         }
 
-        private int PokajiHelp(int cheats)
+        private int DisplayHelp(int cheats)
         {
             if (cheats < 4)
             {
@@ -238,13 +233,15 @@
             }
         }
 
-        private bool IsValidInput(string playerInput)
+        private bool IsValidNumber(string playerInput)
         {
+            //Useless validation?
             if (playerInput == string.Empty || playerInput.Length != NUMBER_LENGHT)
             {
                 return false;
             }
 
+            //May be try parse the input and return false on error?
             for (int i = 0; i < playerInput.Length; i++)
             {
                 char currentChar = playerInput[i];

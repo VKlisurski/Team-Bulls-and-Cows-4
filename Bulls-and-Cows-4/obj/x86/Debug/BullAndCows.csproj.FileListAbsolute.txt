@@ -3,3 +3,8 @@ D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\Git\Bulls-and-Cows-4\bin\De
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\Git\Bulls-and-Cows-4\obj\x86\Debug\BullAndCows.csprojResolveAssemblyReference.cache
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\Git\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.exe
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\Git\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.pdb
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.exe
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.pdb
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.exe
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.pdb
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\Bulls-and-Cows-4\obj\x86\Debug\BullAndCows.csprojResolveAssemblyReference.cache
