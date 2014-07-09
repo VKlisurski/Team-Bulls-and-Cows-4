@@ -43,6 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BullsAndCows.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="CommandExit.cs" />
+    <Compile Include="CommandFactory.cs" />
+    <Compile Include="CommandHelp.cs" />
+    <Compile Include="CommandOther.cs" />
+    <Compile Include="CommandRestart.cs" />
+    <Compile Include="CommandTop.cs" />
+    <Compile Include="FactoryMethod.cs" />
+    <Compile Include="GameEngine.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="LeaderBoard.cs" />
