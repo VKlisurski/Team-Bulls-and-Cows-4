@@ -9,8 +9,7 @@
 
         public override void Execute()
         {
-            //TODO
-            engine.Action();
+            engine.PrintWrongCommandMessage();
         }
     }
 }

@@ -5,29 +5,15 @@
 
     internal class Helper
     {
-        private static Helper instance;
         private int cheats;
         private StringBuilder helpNumber;
         string helpPattern = null;
 
-        private Helper()
+        public Helper()
         {
             this.cheats = 0;
             this.helpNumber = new StringBuilder("XXXX");
             this.helpPattern = null;
-        }
-
-        public static Helper Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new Helper();
-                }
-
-                return instance;
-            }
         }
 
         public int Cheats

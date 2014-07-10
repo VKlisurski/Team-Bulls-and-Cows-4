@@ -45,7 +45,7 @@
     <Compile Include="BullsAndCows.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandExit.cs" />
-    <Compile Include="CommandFactory.cs" />
+    <Compile Include="CommandCreator.cs" />
     <Compile Include="CommandHelp.cs" />
     <Compile Include="CommandOther.cs" />
     <Compile Include="CommandRestart.cs" />
@@ -55,7 +55,6 @@
     <Compile Include="Helper.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="LeaderBoard.cs" />
-    <Compile Include="PlayerCommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
