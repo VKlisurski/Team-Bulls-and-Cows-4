@@ -1,7 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
-    using System.Linq;
 
     public class Player : IComparable<Player>
     {
@@ -20,6 +19,7 @@
             {
                 return this.name;
             }
+
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
@@ -37,6 +37,7 @@
             {
                 return this.attempts;
             }
+
             set
             {
                 if (value < 0)
@@ -52,7 +53,7 @@
         {
             if (other == null)
             {
-                return 1;
+                throw new ArgumentNullException("Cannot compare player to null");
             }
 
             return other.Attempts - this.Attempts;

@@ -1,19 +1,17 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
 
     public class BullsAndCows
     {
-        private const string WELCOME_MESSAGE = "Welcome to “Bulls and Cows” game. " +
+        private const string WelcomeMessage = "Welcome to “Bulls and Cows” game. " +
             "Please try to guess my secret 4-digit number." +
             "Use 'top' to view the top scoreboard, 'restart' " +
             "to start a new game and 'help' to cheat and 'exit' to quit the game.";
 
-        private const string WRONG_COMMAND_MESSAGE = "Incorrect guess or command!";
-        private const int NUMBER_LENGHT = 4;
+        private const string WrongCommandMessage = "Incorrect guess or command!";
+        private const int DefaultNumberLength = 4;
         private string helpPattern;
         private StringBuilder helpNumber;
         private string generatedNumber;
@@ -24,14 +22,7 @@
             this.leaderBoard = new LeaderBoard<Player>();
         }
 
-        private enum PlayerCommand
-        {
-            Top,
-            Restart,
-            Help,
-            Exit,
-            Other
-        }
+        
 
         public static void Main()
         {
@@ -44,7 +35,7 @@
             StringBuilder num = new StringBuilder(4);
             Random randomNumberGenerator = new Random(DateTime.Now.Millisecond);
 
-            for (int i = 0; i < NUMBER_LENGHT; i++)
+            for (int i = 0; i < DefaultNumberLength; i++)
             {
                 int randomDigit = randomNumberGenerator.Next(9);
 
@@ -80,12 +71,12 @@
 
         private void PrintWelcomeMessage()
         {
-            Console.WriteLine(WELCOME_MESSAGE);
+            Console.WriteLine(WelcomeMessage);
         }
 
         private void PrintWrongCommandMessage()
         {
-            Console.WriteLine(WRONG_COMMAND_MESSAGE);
+            Console.WriteLine(WrongCommandMessage);
         }
 
         private void PrintCongratulateMessage(int attempts, int cheats)
@@ -132,7 +123,7 @@
                         int bullsCount;
                         int cowsCount;
                         this.CalculateBullsAndCowsCount(playerInput, this.generatedNumber, out bullsCount, out cowsCount);
-                        if (bullsCount == NUMBER_LENGHT)
+                        if (bullsCount == DefaultNumberLength)
                         {
                             this.PrintCongratulateMessage(attempts, helper.Cheats);
                             this.FinishGame(attempts, helper.Cheats);
@@ -193,7 +184,7 @@
         private bool IsValidNumber(string playerInput)
         {
             //Useless validation?
-            if (playerInput == string.Empty || playerInput.Length != NUMBER_LENGHT)
+            if (playerInput == string.Empty || playerInput.Length != DefaultNumberLength)
             {
                 return false;
             }

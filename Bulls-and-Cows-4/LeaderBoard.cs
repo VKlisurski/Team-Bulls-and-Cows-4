@@ -2,31 +2,61 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
     public class LeaderBoard<T> : IEnumerable<T>, IEnumerator<T> where T : IComparable<T>
     {
-        private int maxCountOfStoredData;
+        private const int DefaultNumberOfItemsInLeaderBoard = 5;
+        private int maxNumberOfItems;
         private T[] data;
         private int position = -1;
         private int count;
 
         public LeaderBoard()
-            : this(5)
+            : this(DefaultNumberOfItemsInLeaderBoard)
         {
         }
 
         public LeaderBoard(int aMaxCountOfStoredData)
         {
-            this.maxCountOfStoredData = aMaxCountOfStoredData;
-            this.data = new T[this.maxCountOfStoredData];
-            this.count = 0;
+            this.MaxNumberOfItems = aMaxCountOfStoredData;
+            this.data = new T[this.maxNumberOfItems];
+            this.Count = 0;
         }
 
         public int Count
         {
-            get { return this.count; }
+            get 
+            { 
+                return this.count; 
+            }
+
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentOutOfRangeException("LeaderBoard item count cannot be negative");
+                }
+
+                this.count = value;
+            }
+        }
+
+        public int MaxNumberOfItems
+        {
+            get
+            {
+                return this.maxNumberOfItems;
+            }
+
+            set
+            {
+                if (value < 1)
+                {
+                    throw new ArgumentOutOfRangeException("The maximum number of items in the Leader Board must be positive");
+                }
+
+                this.maxNumberOfItems = value;
+            }
         }
 
         public T Current
@@ -47,7 +77,15 @@
 
         public void Add(T item)
         {
-            if (item.CompareTo(this.data[this.maxCountOfStoredData - 1]) >= 0)
+            //If this is the first item to be added
+            if (this.Count == 0)
+            {
+                this.data[0] = item;
+                this.count++;
+                return;
+            }
+
+            if (item.CompareTo(this.data[this.Count - 1]) >= 0)
             {
                 int tPointer = 0;
                 while (item.CompareTo(this.data[tPointer]) < 0)
@@ -55,15 +93,27 @@
                     tPointer++;
                 }
 
-                for (int i = this.maxCountOfStoredData - 1; i > tPointer; i--)
+                for (int i = this.MaxNumberOfItems - 1; i > tPointer; i--)
                 {
                     this.data[i] = this.data[i - 1];
                 }
 
                 this.data[tPointer] = item;
-                if (this.count < this.maxCountOfStoredData)
+                if (this.Count < this.MaxNumberOfItems)
                 {
-                    this.count++;
+                    this.Count++;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < this.MaxNumberOfItems; i++)
+                {
+                    if (this.data[i] == null)
+                    {
+                        this.data[i] = item;
+                        this.Count++;
+                        break;
+                    }
                 }
             }
         }
