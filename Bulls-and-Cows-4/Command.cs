@@ -2,12 +2,12 @@
 {
     internal abstract class Command
     {
-        protected GameEngine engine;
-
         public Command(GameEngine engine)
         {
-            this.engine = engine;
+            this.Engine = engine;
         }
+
+        protected GameEngine Engine { get; set; }
 
         public abstract void Execute();
     }

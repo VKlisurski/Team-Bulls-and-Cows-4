@@ -7,7 +7,7 @@
     {
         private int cheats;
         private StringBuilder helpNumber;
-        string helpPattern = null;
+        private string helpPattern = null;
 
         public Helper()
         {
@@ -22,13 +22,12 @@
             {
                 return this.cheats;
             }
+
             set
             {
                 this.cheats = value;
             }
         }
-
-
 
         public void DisplayHelp(string generatedNumber)
         {

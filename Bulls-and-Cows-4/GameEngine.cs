@@ -1,26 +1,24 @@
-﻿
-namespace BullsAndCowsGame
+﻿namespace BullsAndCowsGame
 {
     using System;
-    using System.Text;
-    
+    using System.Text;    
 
     public class GameEngine
     {
+        private const int DefaultNumberLength = 4;
         private static GameEngine game;
         private CommandCreator commandCreator = new CommandCreator();
-        private const int DefaultNumberLength = 4;
         private int attempts;
         private string generatedNumber;
         private LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
         private bool gameOn;
-        Helper helper;
+        private Helper helper;
 
         private GameEngine()
         {
             this.attempts = 0;
             this.helper = new Helper();
-            this.generatedNumber = GenerateNumber();
+            this.generatedNumber = this.GenerateNumber();
             this.gameOn = true;
         }
 
@@ -89,6 +87,28 @@ namespace BullsAndCowsGame
         {
             this.PrintWelcomeMessage();
             game = new GameEngine();
+        }
+
+        internal void PrintHelp()
+        {
+            this.helper.DisplayHelp(this.generatedNumber);
+        }
+
+        internal void PrintScoreboard()
+        {
+            if (this.leaderBoard.Count == 0)
+            {
+                Console.WriteLine("Top scoreboard is empty.");
+            }
+            else
+            {
+                Console.WriteLine("Scoreboard:");
+                int i = 1;
+                foreach (Player p in this.leaderBoard)
+                {
+                    Console.WriteLine("{0}. {1} --> {2} guess" + ((p.Attempts == 1) ? string.Empty : "es"), i++, p.Name, p.Attempts);
+                }
+            }
         }
 
         private void FinishGame()
@@ -163,13 +183,13 @@ namespace BullsAndCowsGame
 
         private bool IsValidNumber(string playerInput)
         {
-            //Useless validation?
+            // Useless validation?
             if (playerInput == string.Empty || playerInput.Length != DefaultNumberLength)
             {
                 return false;
             }
 
-            //May be try parse the input and return false on error?
+            // May be try parse the input and return false on error?
             for (int i = 0; i < playerInput.Length; i++)
             {
                 char currentChar = playerInput[i];
@@ -205,28 +225,5 @@ namespace BullsAndCowsGame
             Console.WriteLine("Use 'top' to view the top scoreboard, 'restart'");
             Console.WriteLine("to start a new game and 'help' to cheat and 'exit' to quit the game.");
         }
-
-        internal void PrintHelp()
-        {
-            helper.DisplayHelp(this.generatedNumber);
-        }
-
-        internal void PrintScoreboard()
-        {
-            if (this.leaderBoard.Count == 0)
-            {
-                Console.WriteLine("Top scoreboard is empty.");
-            }
-            else
-            {
-                Console.WriteLine("Scoreboard:");
-                int i = 1;
-                foreach (Player p in this.leaderBoard)
-                {
-                    Console.WriteLine("{0}. {1} --> {2} guess" + ((p.Attempts == 1) ? string.Empty : "es"), i++, p.Name, p.Attempts);
-                }
-            }
-        }
-
     }
 }

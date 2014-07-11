@@ -16,9 +16,9 @@
         {
         }
 
-        public LeaderBoard(int aMaxCountOfStoredData)
+        public LeaderBoard(int maxCountOfStoredData)
         {
-            this.MaxNumberOfItems = aMaxCountOfStoredData;
+            this.MaxNumberOfItems = maxCountOfStoredData;
             this.data = new T[this.maxNumberOfItems];
             this.Count = 0;
         }
@@ -77,7 +77,7 @@
 
         public void Add(T item)
         {
-            //If this is the first item to be added
+            // If this is the first item to be added
             if (this.Count == 0)
             {
                 this.data[0] = item;
@@ -87,18 +87,18 @@
 
             if (item.CompareTo(this.data[this.Count - 1]) >= 0)
             {
-                int tPointer = 0;
-                while (item.CompareTo(this.data[tPointer]) < 0)
+                int pointer = 0;
+                while (item.CompareTo(this.data[pointer]) < 0)
                 {
-                    tPointer++;
+                    pointer++;
                 }
 
-                for (int i = this.MaxNumberOfItems - 1; i > tPointer; i--)
+                for (int i = this.MaxNumberOfItems - 1; i > pointer; i--)
                 {
                     this.data[i] = this.data[i - 1];
                 }
 
-                this.data[tPointer] = item;
+                this.data[pointer] = item;
                 if (this.Count < this.MaxNumberOfItems)
                 {
                     this.Count++;
