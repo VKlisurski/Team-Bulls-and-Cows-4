@@ -7,12 +7,12 @@
     {
         private const int DefaultNumberLength = 4;
         private static GameEngine game;
-        private CommandCreator commandCreator = new CommandCreator();
+        private readonly CommandCreator commandCreator = new CommandCreator();
         private int attempts;
-        private string generatedNumber;
-        private LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
+        private readonly string generatedNumber;
+        private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
         private bool gameOn;
-        private Helper helper;
+        private readonly Helper helper;
 
         private GameEngine()
         {

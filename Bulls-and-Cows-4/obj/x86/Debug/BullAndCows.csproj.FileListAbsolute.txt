@@ -18,3 +18,8 @@ D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\Bulls-and-Cows-4\obj\x86\De
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\Bulls-and-Cows-4\obj\x86\Debug\BullAndCows.csprojResolveAssemblyReference.cache
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.exe
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.pdb
+D:\Academy\KPK\Teamwork\Bulls-and-Cows-4\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.exe
+D:\Academy\KPK\Teamwork\Bulls-and-Cows-4\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.pdb
+D:\Academy\KPK\Teamwork\Bulls-and-Cows-4\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.exe
+D:\Academy\KPK\Teamwork\Bulls-and-Cows-4\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.pdb
+D:\Academy\KPK\Teamwork\Bulls-and-Cows-4\Bulls-and-Cows-4\obj\x86\Debug\BullAndCows.csprojResolveAssemblyReference.cache

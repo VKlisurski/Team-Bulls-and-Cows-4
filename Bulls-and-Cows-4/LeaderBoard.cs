@@ -7,7 +7,7 @@
     {
         private const int DefaultNumberOfItemsInLeaderBoard = 5;
         private int maxNumberOfItems;
-        private T[] data;
+        private readonly T[] data;
         private int position = -1;
         private int count;
 
