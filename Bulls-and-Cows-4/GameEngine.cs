@@ -21,7 +21,7 @@
             this.helper = new Helper();
             this.generatedNumber = this.GenerateNumber();
             this.gameOn = true;
-            this.calculateBullsAndCowStrategy = new NormalCalculateBullsAndCowsStrategy(this.generatedNumber);
+            this.calculateBullsAndCowStrategy = new NormalCalculateBullsAndCowsStrategy();
         }
 
         public static GameEngine Instance
@@ -53,7 +53,7 @@
                     int cowsCount;
                     this.attempts++;
 
-                    this.calculateBullsAndCowStrategy.ExecuteStrategy(playerInput, out bullsCount, out cowsCount);
+                    this.calculateBullsAndCowStrategy.ExecuteStrategy(playerInput, this.generatedNumber, out bullsCount, out cowsCount);
 
                     if (bullsCount == DefaultNumberLength)
                     {

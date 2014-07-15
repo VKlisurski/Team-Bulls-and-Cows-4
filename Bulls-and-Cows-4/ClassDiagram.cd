@@ -73,7 +73,7 @@
   <Class Name="BullsAndCowsGame.Helper" Collapsed="true">
     <Position X="17.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAABAAAAAQAAAAAAAgAAAAAAAAAAIAAAAAAFA=</HashCode>
+      <HashCode>AAAgAAAAABAAAAAQAAAAAAAgAAAAAAAAAAIAAAAACEA=</HashCode>
       <FileName>Helper.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -94,12 +94,19 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy" Collapsed="true">
-    <Position X="8.25" Y="4.25" Width="1.5" />
+    <Position X="4.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NormalCalculateBullsAndCowsStrategy.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Interface Name="BullsAndCowsGame.ICalculateBullsAndCowsStrategy" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculateBullsAndCowsStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
