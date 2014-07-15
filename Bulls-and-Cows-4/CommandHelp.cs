@@ -1,4 +1,5 @@
-﻿namespace BullsAndCowsGame
+﻿using System;
+namespace BullsAndCowsGame
 {
     internal class CommandHelp : Command
     {
@@ -9,7 +10,7 @@
 
         public override void Execute()
         {
-            Engine.PrintHelp();
+            Console.WriteLine(Engine.GetHelp());
         }
     }
 }

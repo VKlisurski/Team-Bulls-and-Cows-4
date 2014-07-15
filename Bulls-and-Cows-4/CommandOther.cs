@@ -1,4 +1,5 @@
-﻿namespace BullsAndCowsGame
+﻿using System;
+namespace BullsAndCowsGame
 {
     internal class CommandOther : Command
     {
@@ -9,7 +10,7 @@
 
         public override void Execute()
         {
-            Engine.PrintWrongCommandMessage();
+            Console.WriteLine(Message.InvalidCommand());
         }
     }
 }

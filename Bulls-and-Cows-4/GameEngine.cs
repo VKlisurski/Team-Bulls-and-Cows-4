@@ -90,11 +90,6 @@
             this.inputOutput.WriteLine(Message.Goodbye());
         }
 
-        internal void PrintWrongCommandMessage()
-        {
-            this.inputOutput.WriteLine(Message.InvalidCommand());
-        }
-
         internal void Exit()
         {
             this.gameOn = false;
@@ -108,9 +103,9 @@
             this.Start();
         }
 
-        internal void PrintHelp()
+        internal string GetHelp()
         {
-            this.inputOutput.WriteLine(this.helper.GetHelp(this.generatedNumber));
+            return this.helper.GetHelp(this.generatedNumber);
         }
 
         private void FinishGame()
