@@ -7,13 +7,13 @@
     {
         private int cheats;
         private StringBuilder helpNumber;
-        private string helpPattern = null;
+        private string helpPattern;
 
         public Helper()
         {
-            this.cheats = 0;
+            this.Cheats = 0;
             this.helpNumber = new StringBuilder("XXXX");
-            this.helpPattern = null;
+            this.helpPattern = this.GenerateHelpPattern();
         }
 
         public int Cheats
@@ -54,7 +54,7 @@
             this.helpNumber[digitToReveal - 1] = generatedNumber[digitToReveal - 1];
         }
 
-        private void GenerateHelpPattern()
+        private string GenerateHelpPattern()
         {
             string[] helpPaterns = 
             {
@@ -66,7 +66,8 @@
 
             Random randomNumberGenerator = new Random(DateTime.Now.Millisecond);
             int randomPaternNumber = randomNumberGenerator.Next(helpPaterns.Length - 1);
-            this.helpPattern = helpPaterns[randomPaternNumber];
+
+            return helpPaterns[randomPaternNumber];
         }
     }
 }

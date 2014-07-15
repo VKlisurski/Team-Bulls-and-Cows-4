@@ -53,8 +53,13 @@
     <Compile Include="FactoryMethod.cs" />
     <Compile Include="GameEngine.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="NormalCalculateBullsAndCowsStrategy.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="LeaderBoard.cs" />
+    <Compile Include="CalculateBullsAndCowsStrategy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

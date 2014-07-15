@@ -5,7 +5,7 @@
 
     public class GameEngine
     {
-        private const int DefaultNumberLength = 4;
+        public const int DefaultNumberLength = 4;
         private static GameEngine game;
         private readonly CommandCreator commandCreator = new CommandCreator();
         private int attempts;
@@ -13,6 +13,7 @@
         private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
         private bool gameOn;
         private readonly Helper helper;
+        private ICalculateBullsAndCowsStrategy calculateBullsAndCowStrategy;
 
         private GameEngine()
         {
@@ -20,6 +21,7 @@
             this.helper = new Helper();
             this.generatedNumber = this.GenerateNumber();
             this.gameOn = true;
+            this.calculateBullsAndCowStrategy = new NormalCalculateBullsAndCowsStrategy(this.generatedNumber);
         }
 
         public static GameEngine Instance
@@ -51,7 +53,7 @@
                     int cowsCount;
                     this.attempts++;
 
-                    this.CalculateBullsAndCowsCount(playerInput, this.generatedNumber, out bullsCount, out cowsCount);
+                    this.calculateBullsAndCowStrategy.ExecuteStrategy(playerInput, out bullsCount, out cowsCount);
 
                     if (bullsCount == DefaultNumberLength)
                     {
@@ -147,39 +149,39 @@
             }
         }
 
-        private void CalculateBullsAndCowsCount(string playerInput, string generatedNumber, out int bullsCount, out int cowsCount)
-        {
-            bullsCount = 0;
-            cowsCount = 0;
-            StringBuilder playerNumber = new StringBuilder(playerInput);
-            StringBuilder number = new StringBuilder(generatedNumber);
-            for (int i = 0; i < playerNumber.Length; i++)
-            {
-                if (playerNumber[i] == number[i])
-                {
-                    bullsCount++;
-                    playerNumber.Remove(i, 1);
-                    number.Remove(i, 1);
-                    i--;
-                }
-            }
+        //private void CalculateBullsAndCowsCount(string playerInput, string generatedNumber, out int bullsCount, out int cowsCount)
+        //{
+        //    bullsCount = 0;
+        //    cowsCount = 0;
+        //    StringBuilder playerNumber = new StringBuilder(playerInput);
+        //    StringBuilder number = new StringBuilder(generatedNumber);
+        //    for (int i = 0; i < playerNumber.Length; i++)
+        //    {
+        //        if (playerNumber[i] == number[i])
+        //        {
+        //            bullsCount++;
+        //            playerNumber.Remove(i, 1);
+        //            number.Remove(i, 1);
+        //            i--;
+        //        }
+        //    }
 
-            for (int i = 0; i < playerNumber.Length; i++)
-            {
-                for (int j = 0; j < number.Length; j++)
-                {
-                    if (playerNumber[i] == number[j])
-                    {
-                        cowsCount++;
-                        playerNumber.Remove(i, 1);
-                        number.Remove(j, 1);
-                        j--;
-                        i--;
-                        break;
-                    }
-                }
-            }
-        }
+        //    for (int i = 0; i < playerNumber.Length; i++)
+        //    {
+        //        for (int j = 0; j < number.Length; j++)
+        //        {
+        //            if (playerNumber[i] == number[j])
+        //            {
+        //                cowsCount++;
+        //                playerNumber.Remove(i, 1);
+        //                number.Remove(j, 1);
+        //                j--;
+        //                i--;
+        //                break;
+        //            }
+        //        }
+        //    }
+        //}
 
         private bool IsValidNumber(string playerInput)
         {
