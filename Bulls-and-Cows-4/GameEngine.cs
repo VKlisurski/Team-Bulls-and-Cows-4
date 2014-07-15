@@ -20,7 +20,7 @@
         {
             this.attempts = 0;
             this.helper = helper;
-            this.generatedNumber = this.GenerateNumber();
+            this.generatedNumber = GameNumber.Generate(DefaultNumberLength);
             this.gameOn = true;
             this.calculateBullsAndCowStrategy = calculateBullsAndCowsStrategy;
             this.inputOutput = inputOutput;
@@ -62,7 +62,7 @@
 
                 string playerInput = this.inputOutput.ReadLine();
 
-                if (this.IsValidNumber(playerInput))
+                if (GameNumber.IsItValid(playerInput, DefaultNumberLength))
                 {
                     int bullsCount;
                     int cowsCount;
@@ -99,7 +99,7 @@
         {
             this.attempts = 0;
             this.helper.Cheats = 0;
-            this.generatedNumber = GenerateNumber();
+            this.generatedNumber = GameNumber.Generate(DefaultNumberLength);
             this.Start();
         }
 
@@ -164,42 +164,5 @@
         //        }
         //    }
         //}
-
-        private bool IsValidNumber(string playerInput)
-        {
-            // Useless validation?
-            if (playerInput == string.Empty || playerInput.Length != DefaultNumberLength)
-            {
-                return false;
-            }
-
-            // May be try parse the input and return false on error?
-            for (int i = 0; i < playerInput.Length; i++)
-            {
-                char currentChar = playerInput[i];
-
-                if (!char.IsDigit(currentChar))
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
-        private string GenerateNumber()
-        {
-            StringBuilder num = new StringBuilder(4);
-            Random randomNumberGenerator = new Random(DateTime.Now.Millisecond);
-
-            for (int i = 0; i < DefaultNumberLength; i++)
-            {
-                int randomDigit = randomNumberGenerator.Next(9);
-
-                num.Append(randomDigit);
-            }
-
-            return num.ToString();
-        }
     }
 }
