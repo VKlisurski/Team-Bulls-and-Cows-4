@@ -12,3 +12,10 @@ C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\Bull
 C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
 C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb
+E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.dll
+E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.pdb
+E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.exe
+E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.pdb
+E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
+E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
+E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb

@@ -50,9 +50,14 @@
     <Compile Include="CommandOther.cs" />
     <Compile Include="CommandRestart.cs" />
     <Compile Include="CommandTop.cs" />
+    <Compile Include="ConsolePrinter.cs" />
+    <Compile Include="ConsoleReader.cs" />
     <Compile Include="FactoryMethod.cs" />
     <Compile Include="GameEngine.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="InputOutput.cs" />
+    <Compile Include="IPrinter.cs" />
+    <Compile Include="IReader.cs" />
     <Compile Include="NormalCalculateBullsAndCowsStrategy.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="LeaderBoard.cs" />
