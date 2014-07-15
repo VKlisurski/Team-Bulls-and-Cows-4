@@ -9,7 +9,10 @@
 
         public override void Execute()
         {
-            Engine.PrintScoreboard();
+            InputOutput inputOutput = new InputOutput();
+            LeaderBoard<Player> leaderboard = Engine.GetScoreBoard;
+
+            inputOutput.WriteLine(Message.GetScoreBoard(leaderboard));
         }
     }
 }

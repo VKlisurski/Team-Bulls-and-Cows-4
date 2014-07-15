@@ -44,13 +44,21 @@
             }
         }
 
+        internal LeaderBoard<Player> GetScoreBoard
+        {
+            get
+            {
+                return this.leaderBoard;
+            }
+        }
+
         public void Start()
         {
-            this.PrintWelcomeMessage();
+            this.inputOutput.WriteLine(Message.WelcomeMessage());
 
             while (this.gameOn)
             {
-                this.inputOutput.Write("Enter your guess or command: ");
+                this.inputOutput.Write(Message.EnterCommand());
 
                 string playerInput = this.inputOutput.ReadLine();
 
@@ -64,12 +72,12 @@
 
                     if (bullsCount == DefaultNumberLength)
                     {
-                        this.PrintCongratulateMessage();
+                        this.inputOutput.WriteLine(Message.Congratulate(this.helper, this.attempts));
                         this.FinishGame();
                     }
                     else
                     {
-                        this.inputOutput.WriteLine("Wrong number! Bulls: {0}, Cows: {1}", bullsCount, cowsCount);
+                        this.inputOutput.WriteLine(Message.WrongNumber(bullsCount, cowsCount));
                     }
                 }
                 else
@@ -79,12 +87,12 @@
                 }
             }
 
-            this.inputOutput.WriteLine("Good bye!");
+            this.inputOutput.WriteLine(Message.Goodbye());
         }
 
         internal void PrintWrongCommandMessage()
         {
-            this.inputOutput.WriteLine("Invalid guess or command!");
+            this.inputOutput.WriteLine(Message.InvalidCommand());
         }
 
         internal void Exit()
@@ -105,35 +113,18 @@
             this.inputOutput.WriteLine(this.helper.GetHelp(this.generatedNumber));
         }
 
-        internal void PrintScoreboard()
-        {
-            if (this.leaderBoard.Count == 0)
-            {
-                this.inputOutput.WriteLine("Top scoreboard is empty.");
-            }
-            else
-            {
-                this.inputOutput.WriteLine("Scoreboard:");
-                int i = 1;
-                foreach (Player p in this.leaderBoard)
-                {
-                    this.inputOutput.WriteLine("{0}. {1} --> {2} guess" + ((p.Attempts == 1) ? string.Empty : "es"), i++, p.Name, p.Attempts);
-                }
-            }
-        }
-
         private void FinishGame()
         {
             if (this.helper.Cheats == 0)
             {
-                this.inputOutput.Write("Please enter your name for the top scoreboard: ");
+                this.inputOutput.Write(Message.EnterName());
                 string playerName = this.inputOutput.ReadLine();
                 this.AddPlayerToScoreboard(playerName);
-                this.PrintScoreboard();
+                this.inputOutput.WriteLine(Message.GetScoreBoard(this.leaderBoard));
             }
             else
             {
-                this.inputOutput.WriteLine("Cheaters are not allowed to enter the top scoreboard.");
+                this.inputOutput.WriteLine(Message.NoCheaters());
             }
 
             this.Restart();
@@ -143,19 +134,6 @@
         {
             Player player = new Player(playerName, this.attempts);
             this.leaderBoard.Add(player);
-        }
-
-        private void PrintCongratulateMessage()
-        {
-            this.inputOutput.Write("Congratulations! You guessed the secret number in {0} attempts", this.attempts);
-            if (this.helper.Cheats == 0)
-            {
-                this.inputOutput.WriteLine(".");
-            }
-            else
-            {
-                this.inputOutput.WriteLine(" and {0} cheats.", this.helper.Cheats);
-            }
         }
 
         //private void CalculateBullsAndCowsCount(string playerInput, string generatedNumber, out int bullsCount, out int cowsCount)
@@ -227,14 +205,6 @@
             }
 
             return num.ToString();
-        }
-
-        private void PrintWelcomeMessage()
-        {
-            this.inputOutput.WriteLine("Welcome to “Bulls and Cows” game.");
-            this.inputOutput.WriteLine("Please try to guess my secret 4-digit number.");
-            this.inputOutput.WriteLine("Use 'top' to view the top scoreboard, 'restart'");
-            this.inputOutput.WriteLine("to start a new game and 'help' to cheat and 'exit' to quit the game.");
         }
     }
 }

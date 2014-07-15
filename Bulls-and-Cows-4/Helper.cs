@@ -6,17 +6,17 @@
     internal class Helper
     {
         private int cheats;
-        private StringBuilder helpNumber;
-        private string helpPattern;
+        private readonly StringBuilder helpNumber;
+        private readonly string helpPattern;
 
-        public Helper()
+        internal Helper()
         {
             this.Cheats = 0;
             this.helpNumber = new StringBuilder("XXXX");
             this.helpPattern = this.GenerateHelpPattern();
         }
 
-        public int Cheats
+        internal int Cheats
         {
             get
             {
@@ -29,7 +29,7 @@
             }
         }
 
-        public string GetHelp(string generatedNumber)
+        internal string GetHelp(string generatedNumber)
         {
             if (this.cheats < 4)
             {

@@ -58,6 +58,7 @@
     <Compile Include="InputOutput.cs" />
     <Compile Include="IPrinter.cs" />
     <Compile Include="IReader.cs" />
+    <Compile Include="Message.cs" />
     <Compile Include="NormalCalculateBullsAndCowsStrategy.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="LeaderBoard.cs" />
