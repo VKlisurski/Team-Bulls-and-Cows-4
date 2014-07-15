@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BullsAndCowsGame;
+using System.Collections;
+using System.Collections.Generic;
 
-namespace BullsAndCows.Tests.LeaderBoard_Tests
+namespace BullsAndCows.Tests.LeaderBoardTests
 {
     [TestClass]
     public class LeaderBoardTests
@@ -18,7 +18,7 @@ namespace BullsAndCows.Tests.LeaderBoard_Tests
 
             Assert.AreEqual(0, resultCount, "The default leaderBoard count should be 0");
         }
-
+        
         [TestMethod]
         public void SetMaxNumberOfItems()
         {
@@ -64,7 +64,15 @@ namespace BullsAndCows.Tests.LeaderBoard_Tests
         }
 
         [TestMethod]
-        public void TestMoveNext()
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void OutOfRangeMaximumPeople()
+        {
+
+            LeaderBoard<Player> testLeaderBoard = new LeaderBoard<Player>(0);
+        }
+
+        [TestMethod]
+        public void TestMoveNextOnce()
         {
             Player viktor = new Player("Viktor", 3);
             Player niki = new Player("Niki", 2);
@@ -78,6 +86,26 @@ namespace BullsAndCows.Tests.LeaderBoard_Tests
 
             Assert.AreSame("Niki", resultPlayerName,
                 "The expected result should be Niki, because he has less attempts, but the output is {0}",
+                resultPlayerName);
+        }
+
+        [TestMethod]
+        public void TestMoveNextManyTimes()
+        {
+            Player viktor = new Player("Viktor", 3);
+            Player niki = new Player("Niki", 2);
+            LeaderBoard<Player> testLeaderBoard = new LeaderBoard<Player>();
+
+            testLeaderBoard.Add(viktor);
+            testLeaderBoard.Add(niki);
+
+            testLeaderBoard.MoveNext();
+            testLeaderBoard.MoveNext();
+            testLeaderBoard.MoveNext();
+            string resultPlayerName = testLeaderBoard.Current.Name;
+
+            Assert.AreSame("Viktor", resultPlayerName,
+                "The expected result should be Viktor, because he has less attempts, but the output is {0}",
                 resultPlayerName);
         }
 
@@ -123,6 +151,16 @@ namespace BullsAndCows.Tests.LeaderBoard_Tests
             testLeaderBoard.MoveNext();
             testLeaderBoard.Reset();
             Player throwExceptionExpected = testLeaderBoard.Current;
+        }
+
+        [TestMethod]
+        public void GetEnumeratorTest()
+        {
+            LeaderBoard<Player> testLeaderBoard = new LeaderBoard<Player>();
+
+            IEnumerator<Player> type = testLeaderBoard.GetEnumerator() as IEnumerator<Player>;
+
+            Assert.AreNotSame(null, type, "The generated is not type if IEnumerable");
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
-    using System.Text;
 
     public class BullsAndCows
     {

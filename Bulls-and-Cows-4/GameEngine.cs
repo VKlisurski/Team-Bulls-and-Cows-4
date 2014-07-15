@@ -91,7 +91,7 @@
 
         internal void PrintHelp()
         {
-            this.helper.DisplayHelp(this.generatedNumber);
+            Console.WriteLine(this.helper.GetHelp(this.generatedNumber));
         }
 
         internal void PrintScoreboard()
