@@ -29,17 +29,17 @@
             }
         }
 
-        public void DisplayHelp(string generatedNumber)
+        public string GetHelp(string generatedNumber)
         {
             if (this.cheats < 4)
             {
                 this.RevealDigit(generatedNumber);
                 this.cheats++;
-                Console.WriteLine("The number looks like {0}.", this.helpNumber);
+                return string.Format("The number looks like {0}.", this.helpNumber);
             }
             else
             {
-                Console.WriteLine("You are not allowed to ask for more help!");
+                return string.Format("You are not allowed to ask for more help!");
             }
         }
 

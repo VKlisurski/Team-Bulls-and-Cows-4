@@ -50,7 +50,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Helper\HelperTests.cs" />
     <Compile Include="LeaderBoard Tests\LeaderBoardTests.cs" />
+    <Compile Include="Player\PlayerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

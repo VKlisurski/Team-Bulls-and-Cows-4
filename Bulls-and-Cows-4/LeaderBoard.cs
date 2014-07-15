@@ -32,11 +32,6 @@
 
             private set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("LeaderBoard item count cannot be negative");
-                }
-
                 this.count = value;
             }
         }
