@@ -9,7 +9,7 @@
         private static GameEngine game;
         private readonly CommandCreator commandCreator = new CommandCreator();
         private int attempts;
-        private readonly string generatedNumber;
+        private string generatedNumber;
         private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
         private bool gameOn;
         private readonly Helper helper;
@@ -87,8 +87,10 @@
 
         internal void Restart()
         {
-            this.PrintWelcomeMessage();
-            game = new GameEngine();
+            this.attempts = 0;
+            this.helper.Cheats = 0;
+            this.generatedNumber = GenerateNumber();
+            this.Start();
         }
 
         internal void PrintHelp()
