@@ -19,3 +19,10 @@ E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCow
 E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
 E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
 E:\Telerik\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb
+D:\Academy\KPK\Teamwork\BullsAndCows\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.dll
+D:\Academy\KPK\Teamwork\BullsAndCows\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.pdb
+D:\Academy\KPK\Teamwork\BullsAndCows\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.exe
+D:\Academy\KPK\Teamwork\BullsAndCows\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.pdb
+D:\Academy\KPK\Teamwork\BullsAndCows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
+D:\Academy\KPK\Teamwork\BullsAndCows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
+D:\Academy\KPK\Teamwork\BullsAndCows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb

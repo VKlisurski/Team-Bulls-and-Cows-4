@@ -50,10 +50,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Helper\HelperTests.cs" />
     <Compile Include="LeaderBoard Tests\LeaderBoardTests.cs" />
     <Compile Include="Player\PlayerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy Tests\GameStrategyTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bulls-and-Cows-4\BullAndCows.csproj">

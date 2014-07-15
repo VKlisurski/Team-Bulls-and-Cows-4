@@ -61,7 +61,7 @@
     <Compile Include="NormalCalculateBullsAndCowsStrategy.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="LeaderBoard.cs" />
-    <Compile Include="CalculateBullsAndCowsStrategy.cs" />
+    <Compile Include="ICalculateBullsAndCowsStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
