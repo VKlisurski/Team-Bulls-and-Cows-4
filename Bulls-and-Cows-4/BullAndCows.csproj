@@ -56,18 +56,19 @@
     <Compile Include="GameEngine.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="InputOutput.cs" />
-    <Compile Include="IPrinter.cs" />
-    <Compile Include="IReader.cs" />
+    <Compile Include="Contracts\IPrinter.cs" />
+    <Compile Include="Contracts\IReader.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="NormalCalculateBullsAndCowsStrategy.cs" />
     <Compile Include="GameNumber.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="LeaderBoard.cs" />
-    <Compile Include="ICalculateBullsAndCowsStrategy.cs" />
+    <Compile Include="Contracts\ICalculateBullsAndCowsStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

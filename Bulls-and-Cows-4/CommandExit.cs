@@ -7,7 +7,7 @@
         {
         }
 
-        public override void Execute()
+        public override void Execute(InputOutput inputOutput)
         {
             Engine.Exit();
         }

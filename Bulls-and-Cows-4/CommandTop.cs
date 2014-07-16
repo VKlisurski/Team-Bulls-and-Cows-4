@@ -7,9 +7,8 @@
         {
         }
 
-        public override void Execute()
+        public override void Execute(InputOutput inputOutput)
         {
-            InputOutput inputOutput = new InputOutput();
             LeaderBoard<Player> leaderboard = Engine.GetScoreBoard;
 
             inputOutput.WriteLine(Message.GetScoreBoard(leaderboard));

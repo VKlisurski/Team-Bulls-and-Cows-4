@@ -83,7 +83,7 @@
                 else
                 {
                     Command playerCommand = this.commandCreator.Create(playerInput, game);
-                    playerCommand.Execute();
+                    playerCommand.Execute(inputOutput);
                 }
             }
 

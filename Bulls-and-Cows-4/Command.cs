@@ -9,6 +9,6 @@
 
         protected GameEngine Engine { get; set; }
 
-        public abstract void Execute();
+        public abstract void Execute(InputOutput inputOutput);
     }
 }

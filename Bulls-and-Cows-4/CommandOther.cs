@@ -8,9 +8,9 @@ namespace BullsAndCowsGame
         {
         }
 
-        public override void Execute()
+        public override void Execute(InputOutput inputOutput)
         {
-            Console.WriteLine(Message.InvalidCommand());
+            inputOutput.WriteLine(Message.InvalidCommand());
         }
     }
 }
