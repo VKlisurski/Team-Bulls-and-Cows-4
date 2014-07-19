@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace BullsAndCowsGame
+﻿namespace BullsAndCowsGame
 {
+    using System;
+    using System.Text;
+
     public static class GameNumber
     {
         public static string Generate(int defaultNumberLength)

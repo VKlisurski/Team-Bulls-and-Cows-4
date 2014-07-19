@@ -1,41 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace BullsAndCowsGame
+﻿namespace BullsAndCowsGame
 {
+    using System;
+    using System.Text;
+
     public static class Message
     {
-        private const string GOODBYE_MESSAGE = "Good bye!";
-        private const string INVALID_COMMAND_MESSAGE = "Invalid guess or command!";
-        private const string NO_CHEATERS_MESSAGE = "Cheaters are not allowed to enter the top scoreboard.";
-        private const string ENTER_NAME_MESSAGE = "Please enter your name for the top scoreboard: ";
-        private const string ENTER_COMMAND_MESSAGE = "Enter your guess or command: ";
+        private const string GoodByeMessage = "Good bye!";
+        private const string InvalidCommandMessage = "Invalid guess or command!";
+        private const string NoCheatersMessage = "Cheaters are not allowed to enter the top scoreboard.";
+        private const string EnterNameMessage = "Please enter your name for the top scoreboard: ";
+        private const string EnterCommandMessage = "Enter your guess or command: ";
 
         public static string Goodbye()
         {
-            return GOODBYE_MESSAGE;
+            return GoodByeMessage;
         }
 
         public static string InvalidCommand()
         {
-            return INVALID_COMMAND_MESSAGE;
+            return InvalidCommandMessage;
         }
 
         public static string NoCheaters()
         {
-            return NO_CHEATERS_MESSAGE;
+            return NoCheatersMessage;
         }
 
         public static string EnterName()
         {
-            return ENTER_NAME_MESSAGE;
+            return EnterNameMessage;
         }
 
         public static string EnterCommand()
         {
-            return ENTER_COMMAND_MESSAGE;
+            return EnterCommandMessage;
         }
 
         public static string GetScoreBoard(LeaderBoard<Player> leaderBoard)

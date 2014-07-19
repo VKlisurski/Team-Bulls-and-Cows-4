@@ -1,7 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
-    using System.Text;    
 
     public class GameEngine
     {
@@ -101,14 +100,13 @@
                     Command playerCommand = this.commandCreator.Create(playerInput, game);
                     playerCommand.Execute(inputOutput);
                 }
-            }
-
-            this.inputOutput.WriteLine(Message.Goodbye());
+            }            
         }
 
         public void Exit()
         {
             this.gameOn = false;
+            this.inputOutput.WriteLine(Message.Goodbye());
         }
 
         internal void Restart()

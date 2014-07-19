@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace BullsAndCowsGame
+﻿namespace BullsAndCowsGame
 {
+    using System;
+    using System.Text;
+
     public class NormalCalculateBullsAndCowsStrategy : ICalculateBullsAndCowsStrategy
     {
-        private string generatedNumber;
+
 
         public void ExecuteStrategy(string playerInput, string generatedNumber, out int bullsCount, out int cowsCount)
         {

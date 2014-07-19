@@ -1,6 +1,7 @@
-﻿using System;
-namespace BullsAndCowsGame
+﻿namespace BullsAndCowsGame
 {
+    using System;
+
     public class CommandOther : Command
     {
         public CommandOther(GameEngine engine) :
