@@ -1,7 +1,7 @@
 ﻿namespace BullsAndCowsGame
 {
     //Façade
-    class InputOutput
+    public class InputOutput
     {
         private IReader reader;
         private IPrinter printer;

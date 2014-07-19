@@ -3,20 +3,20 @@
     using System;
     using System.Text;
 
-    internal class Helper
+    public class Helper
     {
         private int cheats;
         private readonly StringBuilder helpNumber;
         private readonly string helpPattern;
 
-        internal Helper()
+        public Helper()
         {
             this.Cheats = 0;
             this.helpNumber = new StringBuilder("XXXX");
             this.helpPattern = this.GenerateHelpPattern();
         }
 
-        internal int Cheats
+        public int Cheats
         {
             get
             {
@@ -29,7 +29,7 @@
             }
         }
 
-        internal string GetHelp(string generatedNumber)
+        public string GetHelp(string generatedNumber)
         {
             if (this.cheats < 4)
             {
@@ -39,7 +39,7 @@
             }
             else
             {
-                return string.Format("You are not allowed to ask for more help!");
+                return string.Format("You are not allowed to cheat anymore!");
             }
         }
 

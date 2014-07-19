@@ -50,8 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CommandTests\CommandTests.cs" />
+    <Compile Include="GameEngineTests\GameEngineTests.cs" />
+    <Compile Include="GameNumberTests\GameNumberTests.cs" />
+    <Compile Include="HelperTests\HelperTests.cs" />
     <Compile Include="LeaderBoard Tests\LeaderBoardTests.cs" />
-    <Compile Include="Player\PlayerTests.cs" />
+    <Compile Include="MessageTests\MessageTests.cs" />
+    <Compile Include="PlayerTests\PlayerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy Tests\GameStrategyTests.cs" />
   </ItemGroup>

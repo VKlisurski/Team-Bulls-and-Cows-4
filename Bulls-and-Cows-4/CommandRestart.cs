@@ -1,6 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
-    internal class CommandRestart : Command
+    public class CommandRestart : Command
     {
         public CommandRestart(GameEngine engine) :
             base(engine)

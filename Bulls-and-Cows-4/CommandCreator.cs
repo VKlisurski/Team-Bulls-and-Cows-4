@@ -1,6 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
-    internal class CommandCreator : FactoryMethod
+    public class CommandCreator : FactoryMethod
     {
         public override Command Create(string commandName, GameEngine engine)
         {

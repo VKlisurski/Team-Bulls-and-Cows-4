@@ -1,7 +1,7 @@
 ﻿using System;
 namespace BullsAndCowsGame
 {
-    internal class CommandOther : Command
+    public class CommandOther : Command
     {
         public CommandOther(GameEngine engine) :
             base(engine)

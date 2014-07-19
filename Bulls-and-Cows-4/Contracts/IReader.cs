@@ -1,6 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
-    interface IReader
+    public interface IReader
     {
         string ReadLine();
     }

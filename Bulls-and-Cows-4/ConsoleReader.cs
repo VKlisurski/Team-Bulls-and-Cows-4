@@ -1,7 +1,7 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
-    class ConsoleReader : IReader
+    public class ConsoleReader : IReader
     {
         public string ReadLine()
         {

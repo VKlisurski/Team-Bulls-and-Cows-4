@@ -1,6 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
-    internal class CommandExit : Command
+    public class CommandExit : Command
     {
         public CommandExit(GameEngine engine) :
             base(engine)

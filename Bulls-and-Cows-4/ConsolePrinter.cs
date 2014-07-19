@@ -1,7 +1,7 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
-    class ConsolePrinter : IPrinter
+    public class ConsolePrinter : IPrinter
     {
 
         public void Write(string message)

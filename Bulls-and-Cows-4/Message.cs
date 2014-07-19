@@ -5,40 +5,40 @@ using System.Text;
 
 namespace BullsAndCowsGame
 {
-    internal static class Message
+    public static class Message
     {
-        private const string GoodbyeMessage = "Good bye!";
-        private const string InvalidMessage = "Invalid guess or command!";
-        private const string NoCheatersMessage = "Cheaters are not allowed to enter the top scoreboard.";
-        private const string EnterNameMessage = "Please enter your name for the top scoreboard: ";
-        private const string EnterCommandMessage = "Enter your guess or command: ";
+        private const string GOODBYE_MESSAGE = "Good bye!";
+        private const string INVALID_COMMAND_MESSAGE = "Invalid guess or command!";
+        private const string NO_CHEATERS_MESSAGE = "Cheaters are not allowed to enter the top scoreboard.";
+        private const string ENTER_NAME_MESSAGE = "Please enter your name for the top scoreboard: ";
+        private const string ENTER_COMMAND_MESSAGE = "Enter your guess or command: ";
 
-        internal static string Goodbye()
+        public static string Goodbye()
         {
-            return GoodbyeMessage;
+            return GOODBYE_MESSAGE;
         }
 
-        internal static string InvalidCommand()
+        public static string InvalidCommand()
         {
-            return InvalidMessage;
+            return INVALID_COMMAND_MESSAGE;
         }
 
-        internal static string NoCheaters()
+        public static string NoCheaters()
         {
-            return NoCheatersMessage;
+            return NO_CHEATERS_MESSAGE;
         }
 
-        internal static string EnterName()
+        public static string EnterName()
         {
-            return EnterNameMessage;
+            return ENTER_NAME_MESSAGE;
         }
 
-        internal static string EnterCommand()
+        public static string EnterCommand()
         {
-            return EnterCommandMessage;
+            return ENTER_COMMAND_MESSAGE;
         }
 
-        internal static string GetScoreBoard(LeaderBoard<Player> leaderBoard)
+        public static string GetScoreBoard(LeaderBoard<Player> leaderBoard)
         {
             StringBuilder stringBuilder = new StringBuilder();
 
@@ -48,13 +48,13 @@ namespace BullsAndCowsGame
             }
             else
             {
-                stringBuilder.Append("Scoreboard:");
+                stringBuilder.Append("Scoreboard:\n");
                 int i = 1;
                 string currentAttemptsMessage;
 
-                foreach (Player p in leaderBoard)
+                foreach (Player player in leaderBoard)
                 {
-                    currentAttemptsMessage = String.Format("{0}. {1} --> {2} guess" + ((p.Attempts == 1) ? string.Empty : "es"), i++, p.Name, p.Attempts);
+                    currentAttemptsMessage = String.Format("{0}. {1} --> {2} guess" + ((player.Attempts == 1) ? string.Empty : "es") + "\n", i++, player.Name, player.Attempts);
                     stringBuilder.Append(currentAttemptsMessage);
                 }
             }
@@ -62,38 +62,48 @@ namespace BullsAndCowsGame
             return stringBuilder.ToString();
         }
 
-        internal static string Congratulate(Helper helper, int attempts)
+        public static string Congratulate(Helper helper, int attempts)
         {
+            if (attempts <= 0)
+            {
+                throw new ArgumentException("The number of attemps to win the game cannot be zero or negative integer");
+            }
+
             StringBuilder stringBuilder = new StringBuilder();
 
-            stringBuilder.Append(string.Format("Congratulations! You guessed the secret number in {0} attempts", attempts));
+            stringBuilder.Append(string.Format("Congratulations!\nYou guessed the secret number in {0} attempt" + (attempts > 1 ? "s" : ""), attempts));
+            
             if (helper.Cheats == 0)
             {
                 stringBuilder.Append(".");
             }
             else
             {
-                stringBuilder.Append(String.Format(" and {0} cheats.", helper.Cheats));
+                stringBuilder.Append(String.Format(" and {0} cheat" + (helper.Cheats > 1 ? "s." : "."), helper.Cheats));
             }
 
             return stringBuilder.ToString();
         }
 
-        internal static string WrongNumber(int bullsCount, int cowsCount)
+        public static string WrongNumber(int bullsCount, int cowsCount)
         {
             return String.Format("Wrong number! Bulls: {0}, Cows: {1}", bullsCount, cowsCount);
         }
 
-        internal static string WelcomeMessage()
+        public static string WelcomeMessage()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder welcomeMessage = new StringBuilder();
 
-            sb.Append("Welcome to “Bulls and Cows” game.");
-            sb.AppendLine("Please try to guess my secret 4-digit number.");
-            sb.AppendLine("Use 'top' to view the top scoreboard, 'restart'");
-            sb.AppendLine("to start a new game and 'help' to cheat and 'exit' to quit the game.");
+            welcomeMessage.AppendLine("Welcome to “Bulls and Cows” game.");
+            welcomeMessage.AppendLine();
+            welcomeMessage.AppendLine("Please try to guess my secret 4-digit number.");
+            welcomeMessage.AppendLine("Use:");
+            welcomeMessage.AppendLine("'top' to view the top scoreboard");
+            welcomeMessage.AppendLine("'restart' to start a new game");
+            welcomeMessage.AppendLine("'help' to cheat"); 
+            welcomeMessage.AppendLine("'exit' to quit the game.");
 
-            return sb.ToString();
+            return welcomeMessage.ToString();
         }
     }
 }

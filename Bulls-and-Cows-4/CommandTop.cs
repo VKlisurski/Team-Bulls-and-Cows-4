@@ -1,6 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
-    internal class CommandTop : Command
+    public class CommandTop : Command
     {
         public CommandTop(GameEngine engine) :
             base(engine)

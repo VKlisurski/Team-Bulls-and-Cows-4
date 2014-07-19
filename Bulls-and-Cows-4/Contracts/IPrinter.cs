@@ -1,6 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
-    interface IPrinter
+    public interface IPrinter
     {
         void Write(string message);
         void Write(string format, object arg0);

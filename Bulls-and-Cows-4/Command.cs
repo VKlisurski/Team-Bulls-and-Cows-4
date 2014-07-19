@@ -1,6 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
-    internal abstract class Command
+    public abstract class Command
     {
         public Command(GameEngine engine)
         {
