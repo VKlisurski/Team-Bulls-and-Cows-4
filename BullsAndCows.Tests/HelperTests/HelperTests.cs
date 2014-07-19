@@ -12,8 +12,7 @@ namespace BullsAndCows.Tests.HelperTests
         {
             GameEngine.Instance.Helper.Cheats = 4;
 
-            Assert.AreEqual("You are not allowed to cheat anymore!", GameEngine.Instance.Helper.GetHelp("1111"))
-            ;
+            Assert.AreEqual("You are not allowed to cheat anymore!", GameEngine.Instance.Helper.GetHelp("1111"));
         }
 
         [TestMethod]
@@ -21,8 +20,7 @@ namespace BullsAndCows.Tests.HelperTests
         {
             GameEngine.Instance.Helper.Cheats = 5;
 
-            Assert.AreEqual("You are not allowed to cheat anymore!", GameEngine.Instance.Helper.GetHelp("1111"))
-            ;
+            Assert.AreEqual("You are not allowed to cheat anymore!", GameEngine.Instance.Helper.GetHelp("1111"));
         }
 
         [TestMethod]
@@ -32,7 +30,6 @@ namespace BullsAndCows.Tests.HelperTests
             GameEngine.Instance.Helper.GetHelp("1111");
 
             Assert.AreEqual(2, GameEngine.Instance.Helper.Cheats);
-            ;
         }
     }
 }

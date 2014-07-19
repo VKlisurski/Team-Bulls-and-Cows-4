@@ -22,7 +22,7 @@ namespace BullsAndCows.Tests.GameNumberTests
             int defaultNumberLength = 4;
             string number = GameNumber.Generate(5);
 
-            Assert.AreEqual(GameNumber.IsItValid(number, defaultNumberLength), false);
+            Assert.IsFalse(GameNumber.IsItValid(number, defaultNumberLength));
         }
 
         [TestMethod]

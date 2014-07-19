@@ -29,17 +29,8 @@ namespace BullsAndCowsGame
                 return false;
             }
 
-            // May be try parse the input and return false on error?
-            try
-            {
-                int playerNumber = int.Parse(playerInput);
-            }
-            catch (FormatException)
-            {
-                return false;
-            }
-
-            return true;
+            int expected;
+            return Int32.TryParse(playerInput, out expected);
         }
     }
 }
