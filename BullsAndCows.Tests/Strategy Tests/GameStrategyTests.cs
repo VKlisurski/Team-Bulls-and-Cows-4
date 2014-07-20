@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BullsAndCowsGame;
+using BullsAndCowsGame.Contracts;
 
 namespace BullsAndCows.Tests.Strategy_Tests
 {
