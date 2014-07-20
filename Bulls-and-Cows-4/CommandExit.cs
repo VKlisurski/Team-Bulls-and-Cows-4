@@ -1,8 +1,10 @@
 ﻿namespace BullsAndCowsGame
 {
+    using Contracts;
+
     public class CommandExit : Command
     {
-        public CommandExit(GameEngine engine) :
+        public CommandExit(IGameEngine engine) :
             base(engine)
         {
         }

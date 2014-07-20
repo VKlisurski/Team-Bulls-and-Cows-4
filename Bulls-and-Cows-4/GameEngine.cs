@@ -1,8 +1,9 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
+    using Contracts;
 
-    public class GameEngine
+    public class GameEngine : IGameEngine
     {
         public const int DefaultNumberLength = 4;
         private static GameEngine game;
@@ -59,14 +60,6 @@
             }
         }
 
-        public LeaderBoard<Player> GetScoreBoard
-        {
-            get
-            {
-                return this.leaderBoard;
-            }
-        }
-
         public void Start()
         {
             this.inputOutput.WriteLine(Message.WelcomeMessage());
@@ -109,7 +102,7 @@
             this.inputOutput.WriteLine(Message.Goodbye());
         }
 
-        internal void Restart()
+        public void Restart()
         {
             this.attempts = 0;
             this.helper.Cheats = 0;
@@ -120,6 +113,11 @@
         public string GetHelp()
         {
             return this.helper.GetHelp(this.generatedNumber);
+        }
+
+        public LeaderBoard<Player> GetScoreBoard()
+        {
+            return this.leaderBoard;
         }
 
         private void FinishGame()

@@ -2,9 +2,11 @@
 {
     using System;
 
+    using Contracts;
+
     public class CommandHelp : Command
     {
-        public CommandHelp(GameEngine engine) :
+        public CommandHelp(IGameEngine engine) :
             base(engine)
         {
         }

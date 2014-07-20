@@ -52,6 +52,7 @@
     <Compile Include="CommandTop.cs" />
     <Compile Include="ConsolePrinter.cs" />
     <Compile Include="ConsoleReader.cs" />
+    <Compile Include="Contracts\IGameEngine.cs" />
     <Compile Include="FactoryMethod.cs" />
     <Compile Include="GameEngine.cs" />
     <Compile Include="Helper.cs" />

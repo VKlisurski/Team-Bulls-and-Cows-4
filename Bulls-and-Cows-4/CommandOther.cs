@@ -2,9 +2,11 @@
 {
     using System;
 
+    using Contracts;
+
     public class CommandOther : Command
     {
-        public CommandOther(GameEngine engine) :
+        public CommandOther(IGameEngine engine) :
             base(engine)
         {
         }

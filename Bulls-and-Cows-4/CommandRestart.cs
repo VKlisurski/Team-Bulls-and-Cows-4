@@ -1,8 +1,10 @@
 ﻿namespace BullsAndCowsGame
 {
+    using Contracts;
+
     public class CommandRestart : Command
     {
-        public CommandRestart(GameEngine engine) :
+        public CommandRestart(IGameEngine engine) :
             base(engine)
         {
         }

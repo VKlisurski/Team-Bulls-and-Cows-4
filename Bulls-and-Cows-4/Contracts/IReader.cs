@@ -1,4 +1,4 @@
-﻿namespace BullsAndCowsGame
+﻿namespace BullsAndCowsGame.Contracts
 {
     public interface IReader
     {

@@ -1,13 +1,15 @@
 ﻿namespace BullsAndCowsGame
 {
+    using Contracts;
+
     public abstract class Command
     {
-        public Command(GameEngine engine)
+        public Command(IGameEngine engine)
         {
             this.Engine = engine;
         }
 
-        protected GameEngine Engine { get; set; }
+        protected IGameEngine Engine { get; set; }
 
         public abstract void Execute(InputOutput inputOutput);
     }

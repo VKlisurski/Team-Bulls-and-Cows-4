@@ -1,5 +1,7 @@
 ﻿namespace BullsAndCowsGame
 {
+    using Contracts;
+
     //Façade
     public class InputOutput
     {
