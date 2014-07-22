@@ -13,7 +13,7 @@
 
         public override void Execute(InputOutput inputOutput)
         {
-            inputOutput.WriteLine(Message.InvalidCommand());
+            inputOutput.WriteLine(this.Engine.MessageDispatcher.GetInvalidCommandMessage());
         }
     }
 }

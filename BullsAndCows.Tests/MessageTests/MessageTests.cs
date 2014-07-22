@@ -11,38 +11,38 @@ namespace BullsAndCows.Tests.MessageTests
         [TestMethod]
         public void GoodByeTest()
         {
-            Assert.AreEqual("Good bye!", BullsAndCowsGame.Message.Goodbye(), "Wrong goodbye message!");
+            Assert.AreEqual("Good bye!", GameEngine.Instance.MessageDispatcher.GetGoodbyeMessage(), "Wrong goodbye message!");
         }
 
         [TestMethod]
         public void InvalidCommandTest()
         {
-            Assert.AreEqual("Invalid guess or command!", BullsAndCowsGame.Message.InvalidCommand(), "Wrong invalid command message!");
+            Assert.AreEqual("Invalid guess or command!", GameEngine.Instance.MessageDispatcher.GetInvalidCommandMessage(), "Wrong invalid command message!");
         }
 
         [TestMethod]
         public void NoCheatersTest()
         {
-            Assert.AreEqual("Cheaters are not allowed to enter the top scoreboard.", BullsAndCowsGame.Message.NoCheaters(), "Wrong message that disallows cheaters on the scoreboard!");
+            Assert.AreEqual("Cheaters are not allowed to enter the top scoreboard.", GameEngine.Instance.MessageDispatcher.GetNoCheatersMessage(), "Wrong message that disallows cheaters on the scoreboard!");
         }
 
         [TestMethod]
         public void EnterNameTest()
         {
-            Assert.AreEqual("Please enter your name for the top scoreboard: ", BullsAndCowsGame.Message.EnterName(), "Wrong message that asks players to enter name for the scoreboard!");
+            Assert.AreEqual("Please enter your name for the top scoreboard: ", GameEngine.Instance.MessageDispatcher.GetEnterNameMessage(), "Wrong message that asks players to enter name for the scoreboard!");
         }
 
         [TestMethod]
         public void EnterCommandTest()
         {
-            Assert.AreEqual("Enter your guess or command: ", BullsAndCowsGame.Message.EnterCommand(), "Wrong message that asks players to enter command!");
+            Assert.AreEqual("Enter your guess or command: ", GameEngine.Instance.MessageDispatcher.GetEnterCommandMessage(), "Wrong message that asks players to enter command!");
         }
 
         [TestMethod]
         public void GetScoreBoardWithEmptyLeaderBoardTest()
         {
             LeaderBoard<Player> leaderboard = new LeaderBoard<Player>();
-            Assert.AreEqual("Top scoreboard is empty.", BullsAndCowsGame.Message.GetScoreBoard(leaderboard), "Wrong message when empty scoreboard is passed as argument!");
+            Assert.AreEqual("Top scoreboard is empty.", GameEngine.Instance.MessageDispatcher.GetScoreBoard(leaderboard), "Wrong message when empty scoreboard is passed as argument!");
         }
 
         [TestMethod]
@@ -53,7 +53,7 @@ namespace BullsAndCows.Tests.MessageTests
 
             leaderboard.Add(player);
 
-            Assert.AreEqual("Scoreboard:\n1. Pesho --> 1 guess\n", BullsAndCowsGame.Message.GetScoreBoard(leaderboard));
+            Assert.AreEqual("Scoreboard:\n1. Pesho --> 1 guess\n", GameEngine.Instance.MessageDispatcher.GetScoreBoard(leaderboard));
         }
 
         [TestMethod]
@@ -64,7 +64,7 @@ namespace BullsAndCows.Tests.MessageTests
 
             leaderboard.Add(player);
 
-            Assert.AreEqual("Scoreboard:\n1. Pesho --> 5 guesses\n", BullsAndCowsGame.Message.GetScoreBoard(leaderboard));
+            Assert.AreEqual("Scoreboard:\n1. Pesho --> 5 guesses\n", GameEngine.Instance.MessageDispatcher.GetScoreBoard(leaderboard));
         }
 
         [TestMethod]
@@ -79,7 +79,7 @@ namespace BullsAndCows.Tests.MessageTests
             leaderboard.Add(player2);
             leaderboard.Add(player3);
 
-            Assert.AreEqual("Scoreboard:\n1. Gosho --> 1 guess\n2. Hristo --> 3 guesses\n3. Pesho --> 5 guesses\n", BullsAndCowsGame.Message.GetScoreBoard(leaderboard));
+            Assert.AreEqual("Scoreboard:\n1. Gosho --> 1 guess\n2. Hristo --> 3 guesses\n3. Pesho --> 5 guesses\n", GameEngine.Instance.MessageDispatcher.GetScoreBoard(leaderboard));
         }
 
         [TestMethod]
@@ -88,7 +88,7 @@ namespace BullsAndCows.Tests.MessageTests
             Helper helper = new Helper();
             int attempts = 1;
 
-            Assert.AreEqual("Congratulations!\nYou guessed the secret number in 1 attempt.", BullsAndCowsGame.Message.Congratulate(helper, attempts));
+            Assert.AreEqual("Congratulations!\nYou guessed the secret number in 1 attempt.", GameEngine.Instance.MessageDispatcher.GetCongatulationsMessage(helper, attempts));
         }
 
         [TestMethod]
@@ -97,7 +97,7 @@ namespace BullsAndCows.Tests.MessageTests
             Helper helper = new Helper();
             int attempts = 5;
 
-            Assert.AreEqual("Congratulations!\nYou guessed the secret number in 5 attempts.", BullsAndCowsGame.Message.Congratulate(helper, attempts));
+            Assert.AreEqual("Congratulations!\nYou guessed the secret number in 5 attempts.", GameEngine.Instance.MessageDispatcher.GetCongatulationsMessage(helper, attempts));
         }
 
         [TestMethod]
@@ -107,7 +107,7 @@ namespace BullsAndCows.Tests.MessageTests
             Helper helper = new Helper();
             int attempts = -5;
 
-            BullsAndCowsGame.Message.Congratulate(helper, attempts);
+            GameEngine.Instance.MessageDispatcher.GetCongatulationsMessage(helper, attempts);
         }
 
         [TestMethod]
@@ -117,7 +117,7 @@ namespace BullsAndCows.Tests.MessageTests
             Helper helper = new Helper();
             int attempts = 0;
 
-            BullsAndCowsGame.Message.Congratulate(helper, attempts);
+            GameEngine.Instance.MessageDispatcher.GetCongatulationsMessage(helper, attempts);
         }
 
         [TestMethod]
@@ -127,7 +127,7 @@ namespace BullsAndCows.Tests.MessageTests
             helper.Cheats = 1;
             int attempts = 1;
 
-            Assert.AreEqual("Congratulations!\nYou guessed the secret number in 1 attempt and 1 cheat.", BullsAndCowsGame.Message.Congratulate(helper, attempts));
+            Assert.AreEqual("Congratulations!\nYou guessed the secret number in 1 attempt and 1 cheat.", GameEngine.Instance.MessageDispatcher.GetCongatulationsMessage(helper, attempts));
         }
 
         [TestMethod]
@@ -137,7 +137,7 @@ namespace BullsAndCows.Tests.MessageTests
             helper.Cheats = 4;
             int attempts = 3;
 
-            Assert.AreEqual("Congratulations!\nYou guessed the secret number in 3 attempts and 4 cheats.", BullsAndCowsGame.Message.Congratulate(helper, attempts));
+            Assert.AreEqual("Congratulations!\nYou guessed the secret number in 3 attempts and 4 cheats.", GameEngine.Instance.MessageDispatcher.GetCongatulationsMessage(helper, attempts));
         }
 
         [TestMethod]
@@ -146,7 +146,7 @@ namespace BullsAndCows.Tests.MessageTests
             int bullsCount = 3;
             int cowsCount = 2;
 
-            Assert.AreEqual("Wrong number! Bulls: 3, Cows: 2", BullsAndCowsGame.Message.WrongNumber(bullsCount, cowsCount));
+            Assert.AreEqual("Wrong number! Bulls: 3, Cows: 2", GameEngine.Instance.MessageDispatcher.GetWrongNumberMessage(bullsCount, cowsCount));
         }
 
         [TestMethod]
@@ -163,7 +163,7 @@ namespace BullsAndCows.Tests.MessageTests
             expectedResult.AppendLine("'help' to cheat");
             expectedResult.AppendLine("'exit' to quit the game.");
             //string expectedResult = "Welcome to “Bulls and Cows” game.\n\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.\n";
-            Assert.AreEqual(expectedResult.ToString(), BullsAndCowsGame.Message.WelcomeMessage());
+            Assert.AreEqual(expectedResult.ToString(), GameEngine.Instance.MessageDispatcher.GetWelcomeMessage());
         }
     }
 }

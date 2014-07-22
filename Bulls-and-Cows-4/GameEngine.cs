@@ -6,8 +6,9 @@
     public class GameEngine : IGameEngine
     {
         public const int DefaultNumberLength = 4;
+
         private static GameEngine game;
-        private readonly CommandCreator commandCreator = new CommandCreator();
+        private readonly FactoryMethod commandCreator = new CommandCreator();
         private int attempts;
         private string generatedNumber;
         private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
@@ -15,12 +16,14 @@
         private readonly Helper helper;
         private ICalculateBullsAndCowsStrategy calculateBullsAndCowStrategy;
         private InputOutput inputOutput;
+        private IMessageDispatcher messageDispatcher = new MessageDispatcher();
+        private GameNumberProvider numberProvider = new GameNumberProvider();
 
         private GameEngine(Helper helper, ICalculateBullsAndCowsStrategy calculateBullsAndCowsStrategy, InputOutput inputOutput)
         {
             this.attempts = 0;
             this.helper = helper;
-            this.generatedNumber = GameNumber.Generate(DefaultNumberLength);
+            this.generatedNumber = this.numberProvider.Generate(DefaultNumberLength);
             this.gameOn = true;
             this.calculateBullsAndCowStrategy = calculateBullsAndCowsStrategy;
             this.inputOutput = inputOutput;
@@ -60,17 +63,33 @@
             }
         }
 
+        public IMessageDispatcher MessageDispatcher
+        {
+            get
+            {
+                return this.messageDispatcher;
+            }
+        }
+
+        public GameNumberProvider NumberProvider
+        {
+            get
+            {
+                return this.numberProvider;
+            }
+        }
+
         public void Start()
         {
-            this.inputOutput.WriteLine(Message.WelcomeMessage());
+            this.inputOutput.WriteLine(this.MessageDispatcher.GetWelcomeMessage());
 
             while (this.gameOn)
             {
-                this.inputOutput.Write(Message.EnterCommand());
+                this.inputOutput.Write(this.MessageDispatcher.GetEnterCommandMessage());
 
                 string playerInput = this.inputOutput.ReadLine();
 
-                if (GameNumber.IsItValid(playerInput, DefaultNumberLength))
+                if (this.numberProvider.IsItValid(playerInput, DefaultNumberLength))
                 {
                     int bullsCount;
                     int cowsCount;
@@ -80,12 +99,12 @@
 
                     if (bullsCount == DefaultNumberLength)
                     {
-                        this.inputOutput.WriteLine(Message.Congratulate(this.helper, this.attempts));
+                        this.inputOutput.WriteLine(this.MessageDispatcher.GetCongatulationsMessage(this.helper, this.attempts));
                         this.FinishGame();
                     }
                     else
                     {
-                        this.inputOutput.WriteLine(Message.WrongNumber(bullsCount, cowsCount));
+                        this.inputOutput.WriteLine(this.MessageDispatcher.GetWrongNumberMessage(bullsCount, cowsCount));
                     }
                 }
                 else
@@ -99,14 +118,14 @@
         public void Exit()
         {
             this.gameOn = false;
-            this.inputOutput.WriteLine(Message.Goodbye());
+            this.inputOutput.WriteLine(this.MessageDispatcher.GetGoodbyeMessage());
         }
 
         public void Restart()
         {
             this.attempts = 0;
             this.helper.Cheats = 0;
-            this.generatedNumber = GameNumber.Generate(DefaultNumberLength);
+            this.generatedNumber = this.numberProvider.Generate(DefaultNumberLength);
             this.Start();
         }
 
@@ -124,14 +143,14 @@
         {
             if (this.helper.Cheats == 0)
             {
-                this.inputOutput.Write(Message.EnterName());
+                this.inputOutput.Write(this.MessageDispatcher.GetEnterNameMessage());
                 string playerName = this.inputOutput.ReadLine();
                 this.AddPlayerToScoreboard(playerName);
-                this.inputOutput.WriteLine(Message.GetScoreBoard(this.leaderBoard));
+                this.inputOutput.WriteLine(this.MessageDispatcher.GetScoreBoard(this.leaderBoard));
             }
             else
             {
-                this.inputOutput.WriteLine(Message.NoCheaters());
+                this.inputOutput.WriteLine(this.MessageDispatcher.GetNoCheatersMessage());
             }
 
             this.Restart();
@@ -142,6 +161,5 @@
             Player player = new Player(playerName, this.attempts);
             this.leaderBoard.Add(player);
         }
-
     }
 }

@@ -3,9 +3,9 @@
     using System;
     using System.Text;
 
-    public static class GameNumber
+    public class GameNumberProvider
     {
-        public static string Generate(int defaultNumberLength)
+        public string Generate(int defaultNumberLength)
         {
             StringBuilder num = new StringBuilder(4);
             Random randomNumberGenerator = new Random(DateTime.Now.Millisecond);
@@ -20,7 +20,7 @@
             return num.ToString();
         }
 
-        public static bool IsItValid(string playerInput, int defaultNumberLength)
+        public bool IsItValid(string playerInput, int defaultNumberLength)
         {
             if (playerInput == string.Empty || playerInput.Length != defaultNumberLength)
             {

@@ -28,3 +28,8 @@ D:\Academy\KPK\Teamwork\BullsAndCows\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCows
 D:\Academy\KPK\Teamwork\BullsAndCows\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.exe
 D:\Academy\KPK\Teamwork\BullsAndCows\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.pdb
 D:\Academy\KPK\Teamwork\BullsAndCows\Bulls-and-Cows-4\obj\x86\Debug\BullAndCows.csprojResolveAssemblyReference.cache
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.exe
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.pdb
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\Bulls-and-Cows-4\obj\x86\Debug\BullAndCows.csprojResolveAssemblyReference.cache
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.exe
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.pdb

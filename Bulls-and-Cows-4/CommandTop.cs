@@ -13,7 +13,7 @@
         {
             LeaderBoard<Player> leaderboard = Engine.GetScoreBoard();
 
-            inputOutput.WriteLine(Message.GetScoreBoard(leaderboard));
+            inputOutput.WriteLine(this.Engine.MessageDispatcher.GetScoreBoard(leaderboard));
         }
     }
 }
