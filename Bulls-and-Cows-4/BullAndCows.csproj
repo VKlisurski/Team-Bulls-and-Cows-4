@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -56,6 +57,7 @@
     <Compile Include="Contracts\IMessageDispatcher.cs" />
     <Compile Include="FactoryMethod.cs" />
     <Compile Include="GameEngine.cs" />
+    <Compile Include="GuessResult.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="InputOutput.cs" />
     <Compile Include="Contracts\IPrinter.cs" />

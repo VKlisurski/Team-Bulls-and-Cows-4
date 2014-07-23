@@ -2,6 +2,9 @@
 {
     using Contracts;
 
+    /// <summary>
+    /// 
+    /// </summary>
     public abstract class Command
     {
         public Command(IGameEngine engine)

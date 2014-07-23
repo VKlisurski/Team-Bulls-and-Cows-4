@@ -2,17 +2,17 @@
 {
     using System;
     using System.Text;
-
     using Contracts;
 
+    /// <summary>
+    /// A strategy class, providing method for calculating the number of bulls and cows
+    /// </summary>
     public class NormalCalculateBullsAndCowsStrategy : ICalculateBullsAndCowsStrategy
     {
-
-
-        public void ExecuteStrategy(string playerInput, string generatedNumber, out int bullsCount, out int cowsCount)
+        public GuessResult ExecuteStrategy(string playerInput, string generatedNumber)
         {
-            bullsCount = 0;
-            cowsCount = 0;
+            int bullsCount = 0;
+            int cowsCount = 0;
             StringBuilder playerNumber = new StringBuilder(playerInput);
             StringBuilder number = new StringBuilder(generatedNumber);
             for (int i = 0; i < playerNumber.Length; i++)
@@ -41,6 +41,8 @@
                     }
                 }
             }
+
+            return new GuessResult(bullsCount, cowsCount);
         }
     }
 }

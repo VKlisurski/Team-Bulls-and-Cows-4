@@ -1,21 +1,32 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
+    using System.Collections;
     using System.Collections.Generic;
 
+    /// <summary>
+    /// Represents a collection of items containing information about the best scoring players.
+    /// </summary>
+    /// <typeparam name="T">The type of elements of the leaderboard.</typeparam>
     public class LeaderBoard<T> : IEnumerable<T>, IEnumerator<T> where T : IComparable<T>
     {
-        private const int DefaultNumberOfItemsInLeaderBoard = 5;
+        private const int DefaultNumberOfItems = 5;
         private int maxNumberOfItems;
         private readonly T[] data;
         private int position = -1;
         private int count;
 
+        /// <summary>
+        /// Initializes a new instance of the BullsAndCowsGame.LeaderBoard class.
+        /// </summary>
         public LeaderBoard()
-            : this(DefaultNumberOfItemsInLeaderBoard)
+            : this(LeaderBoard<T>.DefaultNumberOfItems)
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the BullsAndCowsGame.LeaderBoard class.
+        /// </summary>
         public LeaderBoard(int maxCountOfStoredData)
         {
             this.MaxNumberOfItems = maxCountOfStoredData;
@@ -23,26 +34,30 @@
             this.Count = 0;
         }
 
+        /// <summary>
+        /// Gets the number of items in the LeaderBoard<T>.
+        /// </summary>
         public int Count
         {
             get 
             { 
                 return this.count; 
             }
-
             private set
             {
                 this.count = value;
             }
         }
 
+        /// <summary>
+        /// Gets or sets the maximum number of items allowed in the leaderboard.
+        /// </summary>
         public int MaxNumberOfItems
         {
             get
             {
                 return this.maxNumberOfItems;
             }
-
             set
             {
                 if (value < 1)
@@ -54,6 +69,9 @@
             }
         }
 
+        /// <summary>
+        /// Gets the element at the current position of the enumerator.
+        /// </summary>
         public T Current
         {
             get
@@ -62,7 +80,7 @@
             }
         }
 
-        object System.Collections.IEnumerator.Current
+        public object IEnumerator.Current
         {
             get
             {
@@ -70,13 +88,17 @@
             }
         }
 
+        /// <summary>
+        /// Adds an item to the LeaderBoard<T>.
+        /// </summary>
+        /// <param name="item">The item to be added.</param>
         public void Add(T item)
         {
             // If this is the first item to be added
             if (this.Count == 0)
             {
                 this.data[0] = item;
-                this.count++;
+                this.Count++;
                 return;
             }
 
@@ -113,21 +135,36 @@
             }
         }
 
+        /// <summary>
+        /// Returns an enumerator that iterates through the LeaderBoard<T>.
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator<T> GetEnumerator()
         {
             return (IEnumerator<T>)this;
         }
 
-        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        /// <summary>
+        /// Returns an enumerator that iterates through the LeaderBoard<T>.
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerator IEnumerable.GetEnumerator()
         {
             return (IEnumerator<T>)this;
         }
 
+        /// <summary>
+        /// Releases all resources used by the LeaderBoard<T>.Enumerator.
+        /// </summary>
         public void Dispose()
         {
             this.Reset();
         }
 
+        /// <summary>
+        /// Advances the enumerator to the next element of the LeaderBoard<T>.
+        /// </summary>
+        /// <returns>true if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.</returns>
         public bool MoveNext()
         {
             if (this.position < this.Count - 1)
@@ -139,6 +176,9 @@
             return false;
         }
 
+        /// <summary>
+        /// Resets the leaderboard.
+        /// </summary>
         public void Reset()
         {
             this.position = -1;

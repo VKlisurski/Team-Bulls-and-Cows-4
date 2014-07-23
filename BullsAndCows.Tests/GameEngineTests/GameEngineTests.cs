@@ -10,7 +10,7 @@ namespace BullsAndCows.Tests.GameEngineTests
         [TestMethod]
         public void GetScoreBoardTest()
         {
-            Assert.IsInstanceOfType(GameEngine.Instance.GetScoreBoard(), typeof(LeaderBoard<Player>));
+            Assert.IsInstanceOfType(GameEngine.Instance.ScoreBoard, typeof(LeaderBoard<Player>));
         }
 
         [TestMethod]

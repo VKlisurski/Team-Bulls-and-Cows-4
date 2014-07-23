@@ -5,9 +5,21 @@
 
     public class GameNumberProvider
     {
+        /// <summary>
+        /// Initializes a new instance of the BullsAndCowsGame.GameNumberProvider class.
+        /// </summary>
+        public GameNumberProvider()
+        {
+        }
+
+        /// <summary>
+        /// Generates a number with length specified by the defaultNumberLength parameter.
+        /// </summary>
+        /// <param name="defaultNumberLength">Specifies how many digits the number should have.</param>
+        /// <returns>Generated number.</returns>
         public string Generate(int defaultNumberLength)
         {
-            StringBuilder num = new StringBuilder(4);
+            StringBuilder num = new StringBuilder(defaultNumberLength);
             Random randomNumberGenerator = new Random(DateTime.Now.Millisecond);
 
             for (int i = 0; i < defaultNumberLength; i++)
@@ -20,7 +32,13 @@
             return num.ToString();
         }
 
-        public bool IsItValid(string playerInput, int defaultNumberLength)
+        /// <summary>
+        /// Checks if the number entered by the player is a valid "Bulls and Cows" number.
+        /// </summary>
+        /// <param name="playerInput">The number entered by the player.</param>
+        /// <param name="defaultNumberLength">The default length a valid number should have.</param>
+        /// <returns>true if the number is valid and false if it isn't.</returns>
+        public bool IsValidNumber(string playerInput, int defaultNumberLength)
         {
             if (playerInput == string.Empty || playerInput.Length != defaultNumberLength)
             {

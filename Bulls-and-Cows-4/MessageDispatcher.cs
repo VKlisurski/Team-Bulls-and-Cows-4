@@ -4,6 +4,9 @@
     using System.Text;
     using Contracts;
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class MessageDispatcher : IMessageDispatcher
     {
         private const string GoodByeMessage = "Good bye!";
@@ -12,6 +15,13 @@
         private const string EnterNameMessage = "Please enter your name for the top scoreboard: ";
         private const string EnterCommandMessage = "Enter your guess or command: ";
         private const string WelcomeMessage = "Welcome to “Bulls and Cows” game.\n\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.\n";
+        
+        /// <summary>
+        /// Initializes a new instance of the BullsAndCows.MessageDispatcher class
+        /// </summary>
+        public MessageDispatcher()
+        {
+        }
 
         public string GetGoodbyeMessage()
         {
@@ -40,18 +50,7 @@
 
         public string GetWelcomeMessage()
         {
-            StringBuilder welcomeMessage = new StringBuilder();
-
-            welcomeMessage.AppendLine("Welcome to “Bulls and Cows” game.");
-            welcomeMessage.AppendLine();
-            welcomeMessage.AppendLine("Please try to guess my secret 4-digit number.");
-            welcomeMessage.AppendLine("Use:");
-            welcomeMessage.AppendLine("'top' to view the top scoreboard");
-            welcomeMessage.AppendLine("'restart' to start a new game");
-            welcomeMessage.AppendLine("'help' to cheat");
-            welcomeMessage.AppendLine("'exit' to quit the game.");
-
-            return welcomeMessage.ToString();
+            return WelcomeMessage;
         }
 
         public string GetWrongNumberMessage(int bullsCount, int cowsCount)

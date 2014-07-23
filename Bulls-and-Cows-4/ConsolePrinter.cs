@@ -1,12 +1,10 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
-
     using Contracts;
 
     public class ConsolePrinter : IPrinter
     {
-
         public void Write(string message)
         {
             Console.Write(message);
@@ -26,7 +24,6 @@
         {
             Console.WriteLine(message);
         }
-
 
         public void WriteLine(string message, object arg0)
         {

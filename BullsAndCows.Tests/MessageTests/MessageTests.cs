@@ -152,17 +152,8 @@ namespace BullsAndCows.Tests.MessageTests
         [TestMethod]
         public void WelcomeMessageTest()
         {
-            StringBuilder expectedResult = new StringBuilder();
+            string expectedResult = "Welcome to “Bulls and Cows” game.\n\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.\n";
 
-            expectedResult.AppendLine("Welcome to “Bulls and Cows” game.");
-            expectedResult.AppendLine();
-            expectedResult.AppendLine("Please try to guess my secret 4-digit number.");
-            expectedResult.AppendLine("Use:");
-            expectedResult.AppendLine("'top' to view the top scoreboard");
-            expectedResult.AppendLine("'restart' to start a new game");
-            expectedResult.AppendLine("'help' to cheat");
-            expectedResult.AppendLine("'exit' to quit the game.");
-            //string expectedResult = "Welcome to “Bulls and Cows” game.\n\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.\n";
             Assert.AreEqual(expectedResult.ToString(), GameEngine.Instance.MessageDispatcher.GetWelcomeMessage());
         }
     }

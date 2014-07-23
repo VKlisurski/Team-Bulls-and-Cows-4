@@ -15,15 +15,13 @@ namespace BullsAndCows.Tests.Strategy_Tests
             const string GeneratedNumber = "5067";
             const int ExpectedBulls = 0;
             const int ExpectedCows = 0;
-            int bulls = 0;
-            int cows = 0;
 
             ICalculateBullsAndCowsStrategy strategy = new NormalCalculateBullsAndCowsStrategy();
 
-            strategy.ExecuteStrategy(PlayerInput, GeneratedNumber, out bulls, out cows);
+            GuessResult guessResult = strategy.ExecuteStrategy(PlayerInput, GeneratedNumber);
 
-            Assert.AreEqual(ExpectedBulls, bulls, "The result bulls should be {0}, but it is {1}", ExpectedBulls, bulls);
-            Assert.AreEqual(ExpectedCows, cows, "The result cows should be {0}, but it is {1}", ExpectedCows, cows);
+            Assert.AreEqual(ExpectedBulls, guessResult.Bulls, "The result bulls should be {0}, but it is {1}", ExpectedBulls, guessResult.Bulls);
+            Assert.AreEqual(ExpectedCows, guessResult.Cows, "The result cows should be {0}, but it is {1}", ExpectedCows, guessResult.Cows);
         }
 
         [TestMethod]
@@ -32,14 +30,12 @@ namespace BullsAndCows.Tests.Strategy_Tests
             const string PlayerInput = "1342";
             const string GeneratedNumber = "0351";
             const int ExpectedBulls = 1;
-            int bulls = 0;
-            int cows = 0;
 
             ICalculateBullsAndCowsStrategy strategy = new NormalCalculateBullsAndCowsStrategy();
 
-            strategy.ExecuteStrategy(PlayerInput, GeneratedNumber, out bulls, out cows);
+            GuessResult guessResult = strategy.ExecuteStrategy(PlayerInput, GeneratedNumber);
 
-            Assert.AreEqual(ExpectedBulls, bulls, "The result bulls should be {0}, but it is {1}", ExpectedBulls, bulls);
+            Assert.AreEqual(ExpectedBulls, guessResult.Bulls, "The result bulls should be {0}, but it is {1}", ExpectedBulls, guessResult.Bulls);
         }
 
         [TestMethod]
@@ -48,14 +44,12 @@ namespace BullsAndCows.Tests.Strategy_Tests
             const string PlayerInput = "1342";
             const string GeneratedNumber = "0351";
             const int ExpectedCows = 1;
-            int bulls = 0;
-            int cows = 0;
 
             ICalculateBullsAndCowsStrategy strategy = new NormalCalculateBullsAndCowsStrategy();
 
-            strategy.ExecuteStrategy(PlayerInput, GeneratedNumber, out bulls, out cows);
+            GuessResult guessResult = strategy.ExecuteStrategy(PlayerInput, GeneratedNumber);
 
-            Assert.AreEqual(ExpectedCows, cows, "The result cows should be {0}, but it is {1}", ExpectedCows, cows);
+            Assert.AreEqual(ExpectedCows, guessResult.Cows, "The result cows should be {0}, but it is {1}", ExpectedCows, guessResult.Cows);
         }
 
         [TestMethod]
@@ -64,14 +58,12 @@ namespace BullsAndCows.Tests.Strategy_Tests
             const string PlayerInput = "1342";
             const string GeneratedNumber = "3421";
             const int ExpectedCows = 4;
-            int bulls = 0;
-            int cows = 0;
 
             ICalculateBullsAndCowsStrategy strategy = new NormalCalculateBullsAndCowsStrategy();
 
-            strategy.ExecuteStrategy(PlayerInput, GeneratedNumber, out bulls, out cows);
+            GuessResult guessResult = strategy.ExecuteStrategy(PlayerInput, GeneratedNumber);
 
-            Assert.AreEqual(ExpectedCows, cows, "The result cows should be {0}, but it is {1}", ExpectedCows, cows);
+            Assert.AreEqual(ExpectedCows, guessResult.Cows, "The result cows should be {0}, but it is {1}", ExpectedCows, guessResult.Cows);
         }
 
         [TestMethod]
@@ -80,14 +72,12 @@ namespace BullsAndCows.Tests.Strategy_Tests
             const string PlayerInput = "1342";
             const string GeneratedNumber = "1342";
             const int ExpectedBulls = 4;
-            int bulls = 0;
-            int cows = 0;
 
             ICalculateBullsAndCowsStrategy strategy = new NormalCalculateBullsAndCowsStrategy();
 
-            strategy.ExecuteStrategy(PlayerInput, GeneratedNumber, out bulls, out cows);
+            GuessResult guessResult = strategy.ExecuteStrategy(PlayerInput, GeneratedNumber);
 
-            Assert.AreEqual(ExpectedBulls, bulls, "The result bulls should be {0}, but it is {1}", ExpectedBulls, bulls);
+            Assert.AreEqual(ExpectedBulls, guessResult.Bulls, "The result bulls should be {0}, but it is {1}", ExpectedBulls, guessResult.Bulls);
         }
     }
 }
