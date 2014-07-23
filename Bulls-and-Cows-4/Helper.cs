@@ -7,8 +7,7 @@
     /// A class providing functionality for the usage of cheats in the game.
     /// </summary>
     public class Helper
-    {
-        private int cheats;
+    {        
         private readonly StringBuilder helpNumber;
         private readonly string helpPattern;
         private readonly string[] helpPatterns = 
@@ -18,6 +17,8 @@
             "3214", "3241", "3124", "3142", "3412", "3421",
             "4231", "4213", "4321", "4312", "4132", "4123",
         };
+
+        private int cheats;
 
         /// <summary>
         /// Initializes a new instance of the BullsAndCowsGame.Helper class.
@@ -38,6 +39,7 @@
             {
                 return this.cheats;
             }
+
             set
             {
                 if (value < 0)

@@ -2,7 +2,7 @@
 {
     using Contracts;
 
-    //Façade
+    // Façade
     public class InputOutput
     {
         private IReader reader;
@@ -22,6 +22,7 @@
         {
             this.printer.WriteLine();
         }
+
         public void WriteLine(string message)
         {
             this.printer.WriteLine(message);

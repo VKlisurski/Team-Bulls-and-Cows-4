@@ -30,6 +30,7 @@
             {
                 return this.name;
             }
+
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
@@ -50,6 +51,7 @@
             {
                 return this.attempts;
             }
+
             set
             {
                 if (value < 0)

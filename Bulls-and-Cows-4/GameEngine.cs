@@ -70,6 +70,7 @@
             {
                 return this.attempts;
             }
+
             private set
             {
                 if (value < 0)
@@ -87,6 +88,7 @@
             {
                 return this.helper;
             }
+
             set
             {
                 this.helper = value;
@@ -99,6 +101,7 @@
             {
                 return this.gameOn;
             }
+
             set
             {
                 this.gameOn = value;
@@ -111,6 +114,7 @@
             {
                 return this.messageDispatcher;
             }
+
             set
             {
                 this.messageDispatcher = value;
@@ -123,6 +127,7 @@
             {
                 return this.numberProvider;
             }
+
             set
             {
                 this.numberProvider = value;
@@ -168,9 +173,9 @@
                 else
                 {
                     Command playerCommand = this.commandCreator.Create(playerInput, GameEngine.Instance);
-                    playerCommand.Execute(inputOutput);
+                    playerCommand.Execute(this.inputOutput);
                 }
-            }            
+            }
         }
 
         /// <summary>
@@ -202,6 +207,9 @@
             return this.Helper.GetHelp(this.generatedNumber);
         }
         
+        /// <summary>
+        /// If no cheats were used gathers player information for the score board and restarts the game. If any cheats were used, just restarts the game.
+        /// </summary>
         private void FinishGame()
         {
             if (this.Helper.Cheats == 0)

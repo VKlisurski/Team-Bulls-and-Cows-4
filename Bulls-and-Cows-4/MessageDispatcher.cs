@@ -17,7 +17,7 @@
         private const string WelcomeMessage = "Welcome to “Bulls and Cows” game.\n\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.\n";
         
         /// <summary>
-        /// Initializes a new instance of the BullsAndCows.MessageDispatcher class
+        /// Initializes a new instance of the BullsAndCows.MessageDispatcher class.
         /// </summary>
         public MessageDispatcher()
         {
@@ -55,7 +55,7 @@
 
         public string GetWrongNumberMessage(int bullsCount, int cowsCount)
         {
-            return String.Format("Wrong number! Bulls: {0}, Cows: {1}", bullsCount, cowsCount);
+            return string.Format("Wrong number! Bulls: {0}, Cows: {1}", bullsCount, cowsCount);
         }
 
         public string GetScoreBoard(LeaderBoard<Player> leaderBoard)
@@ -74,7 +74,7 @@
 
                 foreach (Player player in leaderBoard)
                 {
-                    currentAttemptsMessage = String.Format("{0}. {1} --> {2} guess" + ((player.Attempts == 1) ? string.Empty : "es") + "\n", i++, player.Name, player.Attempts);
+                    currentAttemptsMessage = string.Format("{0}. {1} --> {2} guess" + ((player.Attempts == 1) ? string.Empty : "es") + "\n", i++, player.Name, player.Attempts);
                     stringBuilder.Append(currentAttemptsMessage);
                 }
             }
@@ -91,7 +91,7 @@
 
             StringBuilder stringBuilder = new StringBuilder();
 
-            stringBuilder.Append(string.Format("Congratulations!\nYou guessed the secret number in {0} attempt" + (attempts > 1 ? "s" : ""), attempts));
+            stringBuilder.Append(string.Format("Congratulations!\nYou guessed the secret number in {0} attempt" + (attempts > 1 ? "s" : string.Empty), attempts));
             
             if (helper.Cheats == 0)
             {
@@ -99,7 +99,7 @@
             }
             else
             {
-                stringBuilder.Append(String.Format(" and {0} cheat" + (helper.Cheats > 1 ? "s." : "."), helper.Cheats));
+                stringBuilder.Append(string.Format(" and {0} cheat" + (helper.Cheats > 1 ? "s." : "."), helper.Cheats));
             }
 
             return stringBuilder.ToString();

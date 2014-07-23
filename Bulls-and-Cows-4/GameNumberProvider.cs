@@ -46,7 +46,7 @@
             }
 
             int expected;
-            return Int32.TryParse(playerInput, out expected);
+            return int.TryParse(playerInput, out expected);
         }
     }
 }

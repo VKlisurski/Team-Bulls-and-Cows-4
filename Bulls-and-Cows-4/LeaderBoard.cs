@@ -11,8 +11,8 @@
     public class LeaderBoard<T> : IEnumerable<T>, IEnumerator<T> where T : IComparable<T>
     {
         private const int DefaultNumberOfItems = 5;
-        private int maxNumberOfItems;
         private readonly T[] data;
+        private int maxNumberOfItems;
         private int position = -1;
         private int count;
 
@@ -43,6 +43,7 @@
             { 
                 return this.count; 
             }
+
             private set
             {
                 this.count = value;
@@ -58,6 +59,7 @@
             {
                 return this.maxNumberOfItems;
             }
+
             set
             {
                 if (value < 1)
