@@ -11,7 +11,7 @@
         private const string NoCheatersMessage = "Cheaters are not allowed to enter the top scoreboard.";
         private const string EnterNameMessage = "Please enter your name for the top scoreboard: ";
         private const string EnterCommandMessage = "Enter your guess or command: ";
-        private const string WelcomeMessage = "Welcome to “Bulls and Cows” game.\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.";
+        private const string WelcomeMessage = "Welcome to “Bulls and Cows” game.\n\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.\n";
 
         public string GetGoodbyeMessage()
         {
@@ -40,7 +40,18 @@
 
         public string GetWelcomeMessage()
         {
-            return WelcomeMessage;
+            StringBuilder welcomeMessage = new StringBuilder();
+
+            welcomeMessage.AppendLine("Welcome to “Bulls and Cows” game.");
+            welcomeMessage.AppendLine();
+            welcomeMessage.AppendLine("Please try to guess my secret 4-digit number.");
+            welcomeMessage.AppendLine("Use:");
+            welcomeMessage.AppendLine("'top' to view the top scoreboard");
+            welcomeMessage.AppendLine("'restart' to start a new game");
+            welcomeMessage.AppendLine("'help' to cheat");
+            welcomeMessage.AppendLine("'exit' to quit the game.");
+
+            return welcomeMessage.ToString();
         }
 
         public string GetWrongNumberMessage(int bullsCount, int cowsCount)

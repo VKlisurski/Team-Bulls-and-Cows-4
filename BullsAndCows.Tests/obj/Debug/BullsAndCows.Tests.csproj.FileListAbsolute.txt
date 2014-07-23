@@ -33,3 +33,10 @@ D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\BullsAndCows.Tests\bin\Debu
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
 D:\Gemini\DEV\Akademy\Homework\KPK-Homework\TeamWork\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.dll
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.pdb
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.exe
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.pdb
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
+C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb
