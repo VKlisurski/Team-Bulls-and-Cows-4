@@ -1,7 +1,6 @@
 ﻿namespace BullsAndCowsGame
 {
     using System;
-
     using Contracts;
 
     public class CommandHelp : Command

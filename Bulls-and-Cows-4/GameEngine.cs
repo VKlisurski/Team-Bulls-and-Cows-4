@@ -11,16 +11,18 @@
         public const int DefaultNumberLength = 4;
 
         private static GameEngine game;
+
         private readonly FactoryMethod commandCreator = new CommandCreator();
+        private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
+
+        private IMessageDispatcher messageDispatcher = new MessageDispatcher();
+        private GameNumberProvider numberProvider = new GameNumberProvider();
         private int attempts;
         private string generatedNumber;
-        private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
         private bool gameOn;
         private Helper helper;
         private ICalculateBullsAndCowsStrategy calculateBullsAndCowStrategy;
         private InputOutput inputOutput;
-        private IMessageDispatcher messageDispatcher = new MessageDispatcher();
-        private GameNumberProvider numberProvider = new GameNumberProvider();
 
         /// <summary>
         /// Initializes a new instance of the BullsAndCowsGame.GameEngine class.
@@ -68,7 +70,7 @@
             {
                 return this.attempts;
             }
-            set
+            private set
             {
                 if (value < 0)
                 {
@@ -202,7 +204,7 @@
         
         private void FinishGame()
         {
-            if (this.helper.Cheats == 0)
+            if (this.Helper.Cheats == 0)
             {
                 this.inputOutput.Write(this.MessageDispatcher.GetEnterNameMessage());
                 string playerName = this.inputOutput.ReadLine();

@@ -13,7 +13,7 @@ namespace BullsAndCows.Tests.GameNumberTests
             int defaultNumberLength = 4;
             string number = GameEngine.Instance.NumberProvider.Generate(defaultNumberLength);
 
-            Assert.AreEqual(GameEngine.Instance.NumberProvider.IsItValid(number, defaultNumberLength), true);
+            Assert.AreEqual(GameEngine.Instance.NumberProvider.IsValidNumber(number, defaultNumberLength), true);
         }
 
         [TestMethod]
@@ -22,7 +22,7 @@ namespace BullsAndCows.Tests.GameNumberTests
             int defaultNumberLength = 4;
             string number = GameEngine.Instance.NumberProvider.Generate(5);
 
-            Assert.IsFalse(GameEngine.Instance.NumberProvider.IsItValid(number, defaultNumberLength));
+            Assert.IsFalse(GameEngine.Instance.NumberProvider.IsValidNumber(number, defaultNumberLength));
         }
 
         [TestMethod]
@@ -30,7 +30,7 @@ namespace BullsAndCows.Tests.GameNumberTests
         {
             int defaultNumberLength = 5;
 
-            Assert.AreEqual(GameEngine.Instance.NumberProvider.IsItValid("", defaultNumberLength), false);
+            Assert.AreEqual(GameEngine.Instance.NumberProvider.IsValidNumber("", defaultNumberLength), false);
         }
 
         [TestMethod]
@@ -38,7 +38,7 @@ namespace BullsAndCows.Tests.GameNumberTests
         {
             int defaultNumberLength = 5;
 
-            Assert.AreEqual(GameEngine.Instance.NumberProvider.IsItValid("d123d", defaultNumberLength), false);
+            Assert.AreEqual(GameEngine.Instance.NumberProvider.IsValidNumber("d123d", defaultNumberLength), false);
         }
     }
 }

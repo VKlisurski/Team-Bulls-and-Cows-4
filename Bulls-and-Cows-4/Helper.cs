@@ -4,7 +4,7 @@
     using System.Text;
 
     /// <summary>
-    /// A class providing functionality for using cheats in the game.
+    /// A class providing functionality for the usage of cheats in the game.
     /// </summary>
     public class Helper
     {

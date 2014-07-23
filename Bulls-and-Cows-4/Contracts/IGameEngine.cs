@@ -11,7 +11,7 @@
 
         string GetHelp();
 
-        LeaderBoard<Player> ScoreBoard { get; }
+        LeaderBoard<Player> LeaderBoard { get; }
 
         IMessageDispatcher MessageDispatcher { get; }
     }

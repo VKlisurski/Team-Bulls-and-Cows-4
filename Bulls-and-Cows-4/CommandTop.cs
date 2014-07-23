@@ -11,7 +11,7 @@
 
         public override void Execute(InputOutput inputOutput)
         {
-            LeaderBoard<Player> leaderboard = Engine.ScoreBoard;
+            LeaderBoard<Player> leaderboard = Engine.LeaderBoard;
 
             inputOutput.WriteLine(this.Engine.MessageDispatcher.GetScoreBoard(leaderboard));
         }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace BullsAndCowsGame
+﻿namespace BullsAndCowsGame
 {
     /// <summary>
     /// Contains information about how many bulls and how many cows are in a given guess.

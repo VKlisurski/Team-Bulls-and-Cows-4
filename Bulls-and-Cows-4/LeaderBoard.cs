@@ -80,7 +80,7 @@
             }
         }
 
-        public object IEnumerator.Current
+        object IEnumerator.Current
         {
             get
             {
@@ -148,7 +148,7 @@
         /// Returns an enumerator that iterates through the LeaderBoard<T>.
         /// </summary>
         /// <returns></returns>
-        public IEnumerator IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
             return (IEnumerator<T>)this;
         }
