@@ -16,7 +16,7 @@
         private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
 
         private IMessageDispatcher messageDispatcher = new MessageDispatcher();
-        private GameNumber numberProvider = new GameNumber();
+        private GameNumberProvider numberProvider = new GameNumberProvider();
         private int attempts;
         private string generatedNumber;
         private bool gameOn;
@@ -146,7 +146,7 @@
         /// <summary>
         /// Gets or sets an instance used to provide a random number for the player to guess and also to determine if the guess number entered by the player is valid.
         /// </summary>
-        public GameNumber NumberProvider
+        public GameNumberProvider NumberProvider
         {
             get
             {
