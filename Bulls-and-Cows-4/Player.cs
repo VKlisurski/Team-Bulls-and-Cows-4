@@ -33,7 +33,7 @@
 
             set
             {
-                if (string.IsNullOrWhiteSpace(value))
+                if (string.IsNullOrWhiteSpace(value) || string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentException("Name should not be null, empty or whitespaces only.");
                 }
@@ -63,6 +63,11 @@
             }
         }
 
+        /// <summary>
+        /// Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+        /// </summary>
+        /// <param name="other">The object to compare with the current instance.</param>
+        /// <returns>A value that indicates the relative order of the objects being compared. The return value has these meanings: Less than zero if this instance precedes other in the sort order. Zero if this instance instance occurs in the same position in the sort order as other. Greater than zero if this instance follows other in the sort order.</returns>
         public int CompareTo(Player other)
         {
             if (other == null)

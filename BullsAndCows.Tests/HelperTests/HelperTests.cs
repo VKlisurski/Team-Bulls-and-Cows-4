@@ -16,11 +16,12 @@ namespace BullsAndCows.Tests.HelperTests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException), "The player can only have up to four cheats in a game.")]
         public void GetHelpWithFiveCheatsUsedTest()
         {
             GameEngine.Instance.Helper.Cheats = 5;
 
-            Assert.AreEqual("You are not allowed to cheat anymore!", GameEngine.Instance.Helper.GetHelp("1111"));
+            GameEngine.Instance.Helper.GetHelp("1111");
         }
 
         [TestMethod]

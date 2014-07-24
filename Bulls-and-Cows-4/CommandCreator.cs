@@ -1,7 +1,7 @@
 ﻿namespace BullsAndCowsGame
 {
     /// <summary>
-    /// A factory class resposible for the creating of commands.
+    /// A factory class resposible for the creation of commands.
     /// </summary>
     public class CommandCreator : FactoryMethod
     {

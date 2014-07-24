@@ -27,9 +27,9 @@
         /// <summary>
         /// Initializes a new instance of the BullsAndCowsGame.GameEngine class.
         /// </summary>
-        /// <param name="helper"></param>
+        /// <param name="helper">The helper class to be used by the engine.</param>
         /// <param name="calculateBullsAndCowsStrategy">A calculation strategy to be used in the game.</param>
-        /// <param name="inputOutput"></param>
+        /// <param name="inputOutput">The inputout class to be used for communication with the player.</param>
         private GameEngine(Helper helper, ICalculateBullsAndCowsStrategy calculateBullsAndCowsStrategy, InputOutput inputOutput)
         {
             this.Attempts = 0;
@@ -48,6 +48,9 @@
         {
         }
 
+        /// <summary>
+        /// A singleton implementation holding the only possible instance of the BullsAndCowsGame.GameEngine class.
+        /// </summary>
         public static GameEngine Instance
         {
             get
@@ -82,6 +85,9 @@
             }
         }
 
+        /// <summary>
+        /// Gets or sets the helper class to be used by the game engine.
+        /// </summary>
         public Helper Helper
         {
             get
@@ -91,10 +97,18 @@
 
             set
             {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("The Helper value cannot be null.");
+                }
+
                 this.helper = value;
             }
         }
 
+        /// <summary>
+        /// Gets or sets a flag, used by the game engine to determine if the game is running.
+        /// </summary>
         public bool GameOn
         {
             get
@@ -108,6 +122,9 @@
             }
         }
 
+        /// <summary>
+        /// Gets or sets an instance used to provide messages to the player.
+        /// </summary>
         public IMessageDispatcher MessageDispatcher
         {
             get
@@ -115,12 +132,20 @@
                 return this.messageDispatcher;
             }
 
-            set
+            private set
             {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("The MessageDispatcher value cannot be null.");
+                }
+
                 this.messageDispatcher = value;
             }
         }
 
+        /// <summary>
+        /// Gets or sets an instance used to provide a random number for the player to guess and also to determine if the guess number entered by the player is valid.
+        /// </summary>
         public GameNumber NumberProvider
         {
             get
@@ -128,12 +153,20 @@
                 return this.numberProvider;
             }
 
-            set
+            private set
             {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("The NumberProvider value cannot be null.");
+                }
+
                 this.numberProvider = value;
             }
         }
 
+        /// <summary>
+        /// Gets an instance holding information of the top scoring players.
+        /// </summary>
         public LeaderBoard<Player> LeaderBoard
         {
             get

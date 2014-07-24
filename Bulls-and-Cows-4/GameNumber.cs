@@ -3,6 +3,9 @@
     using System;
     using System.Text;
 
+    /// <summary>
+    /// A class used to provide a new number to be guessed by the player and validate a guess number entered by the player.
+    /// </summary>
     public class GameNumber
     {
         /// <summary>

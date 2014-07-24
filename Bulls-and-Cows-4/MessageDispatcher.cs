@@ -5,7 +5,7 @@
     using Contracts;
 
     /// <summary>
-    /// 
+    /// An instance of this object is used to return messages to the player.
     /// </summary>
     public class MessageDispatcher : IMessageDispatcher
     {
@@ -53,11 +53,22 @@
             return WelcomeMessage;
         }
 
+        /// <summary>
+        /// Returns a message with information about how many bulls and how many cows did the guess number have.
+        /// </summary>
+        /// <param name="bullsCount">How many bulls did the guess number have.</param>
+        /// <param name="cowsCount">How many cows did the guess number have.</param>
+        /// <returns>A message holding information if how many bulls and cows were in the guess number.</returns>
         public string GetWrongNumberMessage(int bullsCount, int cowsCount)
         {
             return string.Format("Wrong number! Bulls: {0}, Cows: {1}", bullsCount, cowsCount);
         }
 
+        /// <summary>
+        /// Returns a formatted string displaying information about the players in the given leaderboard.
+        /// </summary>
+        /// <param name="leaderBoard">The leaderboard to be displayed.</param>
+        /// <returns>The socreboard information formatted as a string.</returns>
         public string GetScoreBoard(LeaderBoard<Player> leaderBoard)
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -82,6 +93,12 @@
             return stringBuilder.ToString();
         }
 
+        /// <summary>
+        /// This should be invoked when the player guesses the right number. It returns a congratulations message containing information about how many attempts were made.
+        /// </summary>
+        /// <param name="helper">The helper used during the game.</param>
+        /// <param name="attempts">How many attempts did the player make to guess the number.</param>
+        /// <returns>The congratulations message.</returns>
         public string GetCongatulationsMessage(Helper helper, int attempts)
         {
             if (attempts <= 0)

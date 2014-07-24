@@ -42,6 +42,16 @@
 
             set
             {
+                if (value < 0)
+                {
+                    throw new ArgumentOutOfRangeException("The player cannont have a negative amount of cheats in a game.");
+                }
+
+                if (value > 4)
+                {
+                    throw new ArgumentOutOfRangeException("The player can only have up to four cheats in a game.");
+                }
+
                 this.cheats = value;
             }
         }
@@ -53,10 +63,10 @@
         /// <returns>A string representing the original number with some of it's digits revealed.</returns>
         public string GetHelp(string generatedNumber)
         {
-            if (this.cheats < 4)
+            if (this.Cheats < 4)
             {
                 this.RevealDigit(generatedNumber);
-                this.cheats++;
+                this.Cheats++;
 
                 return string.Format("The number looks like {0}.", this.helpNumber);
             }

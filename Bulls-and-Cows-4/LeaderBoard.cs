@@ -39,13 +39,18 @@
         /// </summary>
         public int Count
         {
-            get 
+            get
             { 
                 return this.count; 
             }
 
             private set
             {
+                if (value < 0)
+                {
+                    throw new ArgumentOutOfRangeException("The count of items in the leaderboard cannot be negative.");
+                }
+
                 this.count = value;
             }
         }

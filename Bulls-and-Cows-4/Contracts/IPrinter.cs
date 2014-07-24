@@ -1,7 +1,14 @@
 ﻿namespace BullsAndCowsGame.Contracts
 {
+    /// <summary>
+    /// Implementations of this are used to output messages to the player.
+    /// </summary>
     public interface IPrinter
     {
+        /// <summary>
+        /// Writes the specified string value to the output defined by the implementation of this interface.
+        /// </summary>
+        /// <param name="message">The value to write.</param>
         void Write(string message);
 
         void Write(string format, object arg0);

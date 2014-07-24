@@ -5,6 +5,11 @@
     /// </summary>
     public class GuessResult
     {
+        /// <summary>
+        /// Initializes a new instance of the BullsAndCowsGame.GuessResult class.
+        /// </summary>
+        /// <param name="bulls">The amount of bulls.</param>
+        /// <param name="cows">The amount of cows.</param>
         public GuessResult(int bulls, int cows)
         {
             this.Bulls = bulls;
