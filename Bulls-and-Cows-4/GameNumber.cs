@@ -3,12 +3,12 @@
     using System;
     using System.Text;
 
-    public class GameNumberProvider
+    public class GameNumber
     {
         /// <summary>
         /// Initializes a new instance of the BullsAndCowsGame.GameNumberProvider class.
         /// </summary>
-        public GameNumberProvider()
+        public GameNumber()
         {
         }
 

@@ -42,16 +42,6 @@
 
             set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentOutOfRangeException("A player cannot have a negative amount of cheats in a game.");
-                }
-
-                if (value > 3)
-                {
-                    throw new ArgumentException("A player is not allowed to have more than 3 cheats in a game.");
-                }
-
                 this.cheats = value;
             }
         }

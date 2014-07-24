@@ -40,3 +40,16 @@ C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\bin\Deb
 C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
 C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
 C:\Users\hiksa\Documents\GitHub\Team-Bulls-and-Cows-4\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.dll
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.pdb
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.exe
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\mscorlib.dll
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.pdb
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\normidna.nlp
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\normnfc.nlp
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\normnfd.nlp
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\normnfkc.nlp
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\normnfkd.nlp
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
+D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb

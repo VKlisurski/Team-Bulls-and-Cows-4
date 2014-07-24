@@ -137,6 +137,8 @@ namespace BullsAndCows.Tests.MessageTests
             helper.Cheats = 4;
             int attempts = 3;
 
+            var todelete = GameEngine.Instance.MessageDispatcher.GetCongatulationsMessage(helper, attempts);
+
             Assert.AreEqual("Congratulations!\nYou guessed the secret number in 3 attempts and 4 cheats.", GameEngine.Instance.MessageDispatcher.GetCongatulationsMessage(helper, attempts));
         }
 

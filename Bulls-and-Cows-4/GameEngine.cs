@@ -16,7 +16,7 @@
         private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
 
         private IMessageDispatcher messageDispatcher = new MessageDispatcher();
-        private GameNumberProvider numberProvider = new GameNumberProvider();
+        private GameNumber numberProvider = new GameNumber();
         private int attempts;
         private string generatedNumber;
         private bool gameOn;
@@ -121,7 +121,7 @@
             }
         }
 
-        public GameNumberProvider NumberProvider
+        public GameNumber NumberProvider
         {
             get
             {
