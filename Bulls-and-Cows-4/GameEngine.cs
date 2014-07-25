@@ -118,7 +118,7 @@
                 return this.attempts;
             }
 
-            private set
+            set
             {
                 if (value < 0)
                 {
@@ -151,6 +151,27 @@
         }
 
         /// <summary>
+        /// Gets or sets the InputOutput provider of the game engine
+        /// </summary>
+        public InputOutput InputOutput
+        {
+            get
+            {
+                return this.inputOutput;
+            }
+
+            set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("The InputOutput value cannot be null.");
+                }
+
+                this.inputOutput = value;
+            }
+        }
+
+        /// <summary>
         /// Gets or sets a flag, used by the game engine to determine if the game is running.
         /// </summary>
         public bool GameOn
@@ -176,7 +197,7 @@
                 return this.messageDispatcher;
             }
 
-            private set
+            set
             {
                 if (value == null)
                 {
@@ -197,7 +218,7 @@
                 return this.numberProvider;
             }
 
-            private set
+            set
             {
                 if (value == null)
                 {
