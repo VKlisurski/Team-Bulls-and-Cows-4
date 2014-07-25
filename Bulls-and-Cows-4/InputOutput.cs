@@ -7,7 +7,14 @@
     /// </summary>
     public class InputOutput
     {
+        /// <summary>
+        /// The reader to be used to get commands from the player.
+        /// </summary>
         private IReader reader;
+
+        /// <summary>
+        /// The printer to be used to print commands to the player.
+        /// </summary>
         private IPrinter printer;
 
         /// <summary>

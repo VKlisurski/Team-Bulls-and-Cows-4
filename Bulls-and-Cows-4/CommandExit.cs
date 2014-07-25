@@ -3,7 +3,7 @@
     using Contracts;
 
     /// <summary>
-    /// 
+    /// A command to be executed when it's time for the player to leave the game.
     /// </summary>
     public class CommandExit : Command
     {

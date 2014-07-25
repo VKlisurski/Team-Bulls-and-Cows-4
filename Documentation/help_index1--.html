@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Index</title>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<style>
+		html,body {
+			margin: 0; padding: 0px;
+			height:100%; 
+			min-height:100%;
+			background-color: rgb(233,232,220);
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			color: black;
+		}
+
+		body {font-size:75%;position:relative; margin-top:-1px; border-style: solid solid solid solid;	border-color: rgb(172,168,153);	border-width: 0px 0px 1px 0px;}
+		a { text-decoration:none; color:#06c }
+		form {padding:5px; margin:0px;}
+	</style>
+</head>
+<body style="direction: ltr;">
+	<form>
+	Look for:<br /><input style="width:100%" onKeyDown="check_input(this.value,get_match)" onKeyUp="check_input(this.value,get_match)"/>
+	</form>
+
+	<script>
+		var words = new Array(
+"Add Method","Attempts Property {BullsAndCowsGame.GameEngine}","Attempts Property {BullsAndCowsGame.Player}","BullAndCows Reference","Bulls Property","BullsAndCows Class","BullsAndCowsGame Namespace","Cheats Property","Command Class","CommandCreator Class","CommandExit Class","CommandExit Constructor","CommandHelp Class","CommandHelp Constructor","CommandOther Class","CommandOther Constructor","CommandRestart Class","CommandRestart Constructor","CommandTop Class","CommandTop Constructor","CompareTo Method","ConsolePrinter Class","ConsoleReader Class","Count Property","Cows Property","Create Method {BullsAndCowsGame.CommandCreator}","Create Method {BullsAndCowsGame.FactoryMethod}","Current Property","Dispose Method","Execute Method {BullsAndCowsGame.CommandExit}","Execute Method {BullsAndCowsGame.CommandHelp}","Execute Method {BullsAndCowsGame.CommandOther}","Execute Method {BullsAndCowsGame.CommandRestart}","Execute Method {BullsAndCowsGame.CommandTop}","Execute Method {BullsAndCowsGame.Command}","ExecuteStrategy Method {BullsAndCowsGame.Contracts.ICalculateBullsAndCowsStrategy}","ExecuteStrategy Method {BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy}","Exit Method {BullsAndCowsGame.Contracts.IGameEngine}","Exit Method {BullsAndCowsGame.GameEngine}","FactoryMethod Class","GameEngine Class","GameNumberProvider Class","GameNumberProvider Constructor","GameOn Property","Generate Method","GetCongatulationsMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetCongatulationsMessage Method {BullsAndCowsGame.MessageDispatcher}","GetEnterCommandMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetEnterCommandMessage Method {BullsAndCowsGame.MessageDispatcher}","GetEnterNameMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetEnterNameMessage Method {BullsAndCowsGame.MessageDispatcher}","GetEnumerator Method","GetGoodbyeMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetGoodbyeMessage Method {BullsAndCowsGame.MessageDispatcher}","GetHelp Method {BullsAndCowsGame.Contracts.IGameEngine}","GetHelp Method {BullsAndCowsGame.GameEngine}","GetHelp Method {BullsAndCowsGame.Helper}","GetInvalidCommandMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetInvalidCommandMessage Method {BullsAndCowsGame.MessageDispatcher}","GetNoCheatersMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetNoCheatersMessage Method {BullsAndCowsGame.MessageDispatcher}","GetScoreBoard Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetScoreBoard Method {BullsAndCowsGame.MessageDispatcher}","GetWelcomeMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetWelcomeMessage Method {BullsAndCowsGame.MessageDispatcher}","GetWrongNumberMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}","GetWrongNumberMessage Method {BullsAndCowsGame.MessageDispatcher}","GuessResult Class","GuessResult Constructor","Helper Class","Helper Constructor","Helper Property","InputOutput  Constructor","InputOutput (IReader, IPrinter) Constructor","InputOutput Class","Instance Property","IsValidNumber Method","LeaderBoard Property {BullsAndCowsGame.Contracts.IGameEngine}","LeaderBoard Property {BullsAndCowsGame.GameEngine}","LeaderBoard&lt;T&gt;  Constructor","LeaderBoard&lt;T&gt; (Int32) Constructor","LeaderBoard&lt;T&gt; Class","Main Method","MaxNumberOfItems Property","MessageDispatcher Class","MessageDispatcher Constructor","MessageDispatcher Property {BullsAndCowsGame.Contracts.IGameEngine}","MessageDispatcher Property {BullsAndCowsGame.GameEngine}","MoveNext Method","Name Property","NormalCalculateBullsAndCowsStrategy Class","NumberProvider Property","Player Class","Player Constructor","ReadLine Method {BullsAndCowsGame.ConsoleReader}","ReadLine Method {BullsAndCowsGame.Contracts.IReader}","ReadLine Method {BullsAndCowsGame.InputOutput}","Reset Method","Restart Method {BullsAndCowsGame.Contracts.IGameEngine}","Restart Method {BullsAndCowsGame.GameEngine}","Start Method {BullsAndCowsGame.Contracts.IGameEngine}","Start Method {BullsAndCowsGame.GameEngine}","Write (String) Method {BullsAndCowsGame.ConsolePrinter}","Write (String) Method {BullsAndCowsGame.Contracts.IPrinter}","Write (String) Method {BullsAndCowsGame.InputOutput}","Write (String, Object) Method","Write (String, Object) Method {BullsAndCowsGame.Contracts.IPrinter}","Write (String, Object) Method {BullsAndCowsGame.InputOutput}","WriteLine  Method {BullsAndCowsGame.ConsolePrinter}","WriteLine  Method {BullsAndCowsGame.Contracts.IPrinter}","WriteLine  Method {BullsAndCowsGame.InputOutput}","WriteLine (String) Method","WriteLine (String) Method {BullsAndCowsGame.Contracts.IPrinter}","WriteLine (String) Method {BullsAndCowsGame.InputOutput}","WriteLine (String, Object()) Method","WriteLine (String, Object()) Method {BullsAndCowsGame.Contracts.IPrinter}","WriteLine (String, Object()) Method {BullsAndCowsGame.InputOutput}","WriteLine (String, Object) Method","WriteLine (String, Object) Method {BullsAndCowsGame.Contracts.IPrinter}","WriteLine (String, Object) Method {BullsAndCowsGame.InputOutput}","WriteLine (String, Object, Object) Method","WriteLine (String, Object, Object) Method {BullsAndCowsGame.Contracts.IPrinter}","WriteLine (String, Object, Object) Method {BullsAndCowsGame.InputOutput}","WriteLine (String, Object, Object, Object) Method","WriteLine (String, Object, Object, Object) Method {BullsAndCowsGame.Contracts.IPrinter}","WriteLine (String, Object, Object, Object) Method {BullsAndCowsGame.InputOutput}","WriteLine (String, Object, Object, Object, Object) Method","WriteLine (String, Object, Object, Object, Object) Method {BullsAndCowsGame.Contracts.IPrinter}","WriteLine (String, Object, Object, Object, Object) Method {BullsAndCowsGame.InputOutput}"
+		);
+		
+		
+		var oldHighlight = 0;
+		var oldKey = "";
+		
+		function get_match(text) {
+		    var ltext = text.toLowerCase();
+		    for(i in words) {
+		        if(words[i].toLowerCase().indexOf(ltext) == "0") {
+		            return words[i];
+		        }
+		    }
+		    return "";
+		}
+		
+		function highlight(keyword) {
+		    if(oldHighlight) oldHighlight.className = "";
+		    var el = parent.frames['zindex'].document.getElementById("w_"+keyword);
+		    el.className="highlighted";
+		    oldHighlight = el;
+		}
+		
+		function check_input(text, matchfun) {
+		    if(text!=oldKey) {
+		        var keyword = matchfun(text);
+		        if(keyword) {       
+		            highlight(keyword);
+		            parent.frames['zindex'].document.getElementById('w_'+keyword).scrollIntoView();
+		        }
+		        oldKey = text;
+		    }
+		}
+	</script>
+</body>
+</html>
+

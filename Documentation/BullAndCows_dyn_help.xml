@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="BullAndCows" Title="BullAndCows Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.Add" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000006A.html" LinkGroup="BullAndCows">Add Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.Attempts" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000041.html" LinkGroup="BullAndCows">Attempts Property {BullsAndCowsGame.GameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Player.Attempts" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000007F.html" LinkGroup="BullAndCows">Attempts Property {BullsAndCowsGame.Player}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullAndCows Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000081.html" LinkGroup="BullAndCows">BullAndCows Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GuessResult.Bulls" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000051.html" LinkGroup="BullAndCows">Bulls Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.BullsAndCows" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000001.html" LinkGroup="BullAndCows">BullsAndCows Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000000.html" LinkGroup="BullAndCows">BullsAndCowsGame Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Helper.Cheats" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000055.html" LinkGroup="BullAndCows">Cheats Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Command" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000003.html" LinkGroup="BullAndCows">Command Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandCreator" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000005.html" LinkGroup="BullAndCows">CommandCreator Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandExit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000007.html" LinkGroup="BullAndCows">CommandExit Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandExit.CommandExit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000008.html" LinkGroup="BullAndCows">CommandExit Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandHelp" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000000A.html" LinkGroup="BullAndCows">CommandHelp Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandHelp.CommandHelp" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000000B.html" LinkGroup="BullAndCows">CommandHelp Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandOther" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000000D.html" LinkGroup="BullAndCows">CommandOther Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandOther.CommandOther" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000000E.html" LinkGroup="BullAndCows">CommandOther Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandRestart" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000010.html" LinkGroup="BullAndCows">CommandRestart Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandRestart.CommandRestart" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000011.html" LinkGroup="BullAndCows">CommandRestart Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandTop" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000013.html" LinkGroup="BullAndCows">CommandTop Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandTop.CommandTop" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000014.html" LinkGroup="BullAndCows">CommandTop Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Player.CompareTo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000080.html" LinkGroup="BullAndCows">CompareTo Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000016.html" LinkGroup="BullAndCows">ConsolePrinter Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsoleReader" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000020.html" LinkGroup="BullAndCows">ConsoleReader Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.Count" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000067.html" LinkGroup="BullAndCows">Count Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GuessResult.Cows" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000052.html" LinkGroup="BullAndCows">Cows Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandCreator.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000006.html" LinkGroup="BullAndCows">Create Method {BullsAndCowsGame.CommandCreator}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.FactoryMethod.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000003E.html" LinkGroup="BullAndCows">Create Method {BullsAndCowsGame.FactoryMethod}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.Current" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000069.html" LinkGroup="BullAndCows">Current Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000006C.html" LinkGroup="BullAndCows">Dispose Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandExit.Execute" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000009.html" LinkGroup="BullAndCows">Execute Method {BullsAndCowsGame.CommandExit}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandHelp.Execute" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000000C.html" LinkGroup="BullAndCows">Execute Method {BullsAndCowsGame.CommandHelp}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandOther.Execute" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000000F.html" LinkGroup="BullAndCows">Execute Method {BullsAndCowsGame.CommandOther}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandRestart.Execute" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000012.html" LinkGroup="BullAndCows">Execute Method {BullsAndCowsGame.CommandRestart}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.CommandTop.Execute" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000015.html" LinkGroup="BullAndCows">Execute Method {BullsAndCowsGame.CommandTop}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Command.Execute" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000004.html" LinkGroup="BullAndCows">Execute Method {BullsAndCowsGame.Command}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.ICalculateBullsAndCowsStrategy.ExecuteStrategy" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000023.html" LinkGroup="BullAndCows">ExecuteStrategy Method {BullsAndCowsGame.Contracts.ICalculateBullsAndCowsStrategy}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy.ExecuteStrategy" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000007B.html" LinkGroup="BullAndCows">ExecuteStrategy Method {BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IGameEngine.Exit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000027.html" LinkGroup="BullAndCows">Exit Method {BullsAndCowsGame.Contracts.IGameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.Exit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000048.html" LinkGroup="BullAndCows">Exit Method {BullsAndCowsGame.GameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.FactoryMethod" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000003D.html" LinkGroup="BullAndCows">FactoryMethod Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000003F.html" LinkGroup="BullAndCows">GameEngine Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameNumberProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000004B.html" LinkGroup="BullAndCows">GameNumberProvider Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameNumberProvider.GameNumberProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000004C.html" LinkGroup="BullAndCows">GameNumberProvider Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.GameOn" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000043.html" LinkGroup="BullAndCows">GameOn Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameNumberProvider.Generate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000004D.html" LinkGroup="BullAndCows">Generate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetCongatulationsMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000002B.html" LinkGroup="BullAndCows">GetCongatulationsMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetCongatulationsMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000079.html" LinkGroup="BullAndCows">GetCongatulationsMessage Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetEnterCommandMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000032.html" LinkGroup="BullAndCows">GetEnterCommandMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetEnterCommandMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000075.html" LinkGroup="BullAndCows">GetEnterCommandMessage Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetEnterNameMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000031.html" LinkGroup="BullAndCows">GetEnterNameMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetEnterNameMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000074.html" LinkGroup="BullAndCows">GetEnterNameMessage Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.GetEnumerator" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000006B.html" LinkGroup="BullAndCows">GetEnumerator Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetGoodbyeMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000002E.html" LinkGroup="BullAndCows">GetGoodbyeMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetGoodbyeMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000071.html" LinkGroup="BullAndCows">GetGoodbyeMessage Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IGameEngine.GetHelp" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000029.html" LinkGroup="BullAndCows">GetHelp Method {BullsAndCowsGame.Contracts.IGameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.GetHelp" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000004A.html" LinkGroup="BullAndCows">GetHelp Method {BullsAndCowsGame.GameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Helper.GetHelp" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000056.html" LinkGroup="BullAndCows">GetHelp Method {BullsAndCowsGame.Helper}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetInvalidCommandMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000002F.html" LinkGroup="BullAndCows">GetInvalidCommandMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetInvalidCommandMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000072.html" LinkGroup="BullAndCows">GetInvalidCommandMessage Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetNoCheatersMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000030.html" LinkGroup="BullAndCows">GetNoCheatersMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetNoCheatersMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000073.html" LinkGroup="BullAndCows">GetNoCheatersMessage Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetScoreBoard" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000002A.html" LinkGroup="BullAndCows">GetScoreBoard Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetScoreBoard" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000078.html" LinkGroup="BullAndCows">GetScoreBoard Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetWelcomeMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000002D.html" LinkGroup="BullAndCows">GetWelcomeMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetWelcomeMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000076.html" LinkGroup="BullAndCows">GetWelcomeMessage Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IMessageDispatcher.GetWrongNumberMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000002C.html" LinkGroup="BullAndCows">GetWrongNumberMessage Method {BullsAndCowsGame.Contracts.IMessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.GetWrongNumberMessage" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000077.html" LinkGroup="BullAndCows">GetWrongNumberMessage Method {BullsAndCowsGame.MessageDispatcher}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GuessResult" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000004F.html" LinkGroup="BullAndCows">GuessResult Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GuessResult.GuessResult" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000050.html" LinkGroup="BullAndCows">GuessResult Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Helper" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000053.html" LinkGroup="BullAndCows">Helper Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Helper.Helper" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000054.html" LinkGroup="BullAndCows">Helper Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.Helper" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000042.html" LinkGroup="BullAndCows">Helper Property</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.InputOutput" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000058_overloads--.html" LinkGroup="BullAndCows">InputOutput </LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.InputOutput" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000059_overloads--.html" LinkGroup="BullAndCows">InputOutput </LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000057.html" LinkGroup="BullAndCows">InputOutput Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.Instance" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000040.html" LinkGroup="BullAndCows">Instance Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameNumberProvider.IsValidNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000004E.html" LinkGroup="BullAndCows">IsValidNumber Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IGameEngine.LeaderBoard" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000024.html" LinkGroup="BullAndCows">LeaderBoard Property {BullsAndCowsGame.Contracts.IGameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.LeaderBoard" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000046.html" LinkGroup="BullAndCows">LeaderBoard Property {BullsAndCowsGame.GameEngine}</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.LeaderBoard" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000065_overloads--.html" LinkGroup="BullAndCows">LeaderBoard </LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.LeaderBoard" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000066_overloads--.html" LinkGroup="BullAndCows">LeaderBoard </LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000064.html" LinkGroup="BullAndCows">LeaderBoard<T> Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.BullsAndCows.Main" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000002.html" LinkGroup="BullAndCows">Main Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.MaxNumberOfItems" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000068.html" LinkGroup="BullAndCows">MaxNumberOfItems Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000006F.html" LinkGroup="BullAndCows">MessageDispatcher Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.MessageDispatcher.MessageDispatcher" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000070.html" LinkGroup="BullAndCows">MessageDispatcher Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IGameEngine.MessageDispatcher" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000025.html" LinkGroup="BullAndCows">MessageDispatcher Property {BullsAndCowsGame.Contracts.IGameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.MessageDispatcher" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000044.html" LinkGroup="BullAndCows">MessageDispatcher Property {BullsAndCowsGame.GameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.MoveNext" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000006D.html" LinkGroup="BullAndCows">MoveNext Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Player.Name" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000007E.html" LinkGroup="BullAndCows">Name Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000007A.html" LinkGroup="BullAndCows">NormalCalculateBullsAndCowsStrategy Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.NumberProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000045.html" LinkGroup="BullAndCows">NumberProvider Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Player" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000007C.html" LinkGroup="BullAndCows">Player Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Player.Player" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000007D.html" LinkGroup="BullAndCows">Player Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsoleReader.ReadLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000021.html" LinkGroup="BullAndCows">ReadLine Method {BullsAndCowsGame.ConsoleReader}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IReader.ReadLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000003C.html" LinkGroup="BullAndCows">ReadLine Method {BullsAndCowsGame.Contracts.IReader}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.ReadLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000063.html" LinkGroup="BullAndCows">ReadLine Method {BullsAndCowsGame.InputOutput}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.LeaderBoard<T>.Reset" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000006E.html" LinkGroup="BullAndCows">Reset Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IGameEngine.Restart" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000028.html" LinkGroup="BullAndCows">Restart Method {BullsAndCowsGame.Contracts.IGameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.Restart" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000049.html" LinkGroup="BullAndCows">Restart Method {BullsAndCowsGame.GameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IGameEngine.Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000026.html" LinkGroup="BullAndCows">Start Method {BullsAndCowsGame.Contracts.IGameEngine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.GameEngine.Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000047.html" LinkGroup="BullAndCows">Start Method {BullsAndCowsGame.GameEngine}</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.Write" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000017_overloads--.html" LinkGroup="BullAndCows">Write Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.Write" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000033_overloads--.html" LinkGroup="BullAndCows">Write Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.Write" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000061_overloads--.html" LinkGroup="BullAndCows">Write Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.Write" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000018_overloads--.html" LinkGroup="BullAndCows">Write Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.Write" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000034_overloads--.html" LinkGroup="BullAndCows">Write Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.Write" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000062_overloads--.html" LinkGroup="BullAndCows">Write Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000019_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000035_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000005A_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000001A_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000036_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000005B_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000001F_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000003B_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000060_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000001B_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000037_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000005C_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000001C_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000038_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000005D_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000001D_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_0000000000000039_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000005E_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.ConsolePrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000001E_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.Contracts.IPrinter.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000003A_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="BullsAndCowsGame.InputOutput.WriteLine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:BullAndCows.chm::/topic_000000000000005F_overloads--.html" LinkGroup="BullAndCows">WriteLine Method</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+

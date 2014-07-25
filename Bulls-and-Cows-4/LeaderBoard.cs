@@ -10,10 +10,29 @@
     /// <typeparam name="T">The type of elements of the leaderboard.</typeparam>
     public class LeaderBoard<T> : IEnumerable<T>, IEnumerator<T> where T : IComparable<T>
     {
+        /// <summary>
+        /// The default number of entries to be stored in the leaderboard.
+        /// </summary>
         private const int DefaultNumberOfItems = 5;
+
+        /// <summary>
+        /// Contains all entries in the leaderboard.
+        /// </summary>
         private readonly T[] data;
+
+        /// <summary>
+        /// The number of entries to be stored in the leaderboard.
+        /// </summary>
         private int maxNumberOfItems;
+
+        /// <summary>
+        /// The position of which item is the enumerator currently at.
+        /// </summary>
         private int position = -1;
+
+        /// <summary>
+        /// The current number of items in the leaderboard.
+        /// </summary>
         private int count;
 
         /// <summary>

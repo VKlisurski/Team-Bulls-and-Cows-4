@@ -7,7 +7,14 @@
     /// </summary>
     public class Player : IComparable<Player>
     {
+        /// <summary>
+        /// The player name.
+        /// </summary>
         private string name;
+
+        /// <summary>
+        /// The amount of attempts the player made.
+        /// </summary>
         private int attempts;
 
         /// <summary>

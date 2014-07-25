@@ -3,7 +3,7 @@
     using Contracts;
 
     /// <summary>
-    /// 
+    /// A command to be executed when the player wants to restart the game.
     /// </summary>
     public class CommandRestart : Command
     {

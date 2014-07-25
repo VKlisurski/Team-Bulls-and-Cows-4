@@ -3,7 +3,7 @@
     using Contracts;
 
     /// <summary>
-    /// 
+    /// This is a base class inherited by all command classes in the game.
     /// </summary>
     public abstract class Command
     {

@@ -9,11 +9,34 @@
     /// </summary>
     public class MessageDispatcher : IMessageDispatcher
     {
+        /// <summary>
+        /// A good bye message to be sent out to a player leaving the game.
+        /// </summary>
         private const string GoodByeMessage = "Good bye!";
+
+        /// <summary>
+        /// A message to be sent out to the player when he enters an invalid command.
+        /// </summary>
         private const string InvalidCommandMessage = "Invalid guess or command!";
+
+        /// <summary>
+        /// A message to be sent out to the player if he used cheats during the game. Cheaters are not accepted in the scoreboard.
+        /// </summary>
         private const string NoCheatersMessage = "Cheaters are not allowed to enter the top scoreboard.";
+
+        /// <summary>
+        /// A message to be displayed when it's time for the player to enter his name for the scoreboard.
+        /// </summary>
         private const string EnterNameMessage = "Please enter your name for the top scoreboard: ";
+
+        /// <summary>
+        /// A message to be displayed to the player when it's time for him to choose a command or enter a guess number.
+        /// </summary>
         private const string EnterCommandMessage = "Enter your guess or command: ";
+
+        /// <summary>
+        /// A welcome message to be displayed to the player when he starts a new game.
+        /// </summary>
         private const string WelcomeMessage = "Welcome to “Bulls and Cows” game.\n\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.\n";
         
         /// <summary>

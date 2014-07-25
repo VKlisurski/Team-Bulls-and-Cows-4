@@ -4,7 +4,7 @@
     using Contracts;
 
     /// <summary>
-    /// 
+    /// A command to be executed, when the player enters an invalid command.
     /// </summary>
     public class CommandOther : Command
     {

@@ -8,20 +8,64 @@
     /// </summary>
     public class GameEngine : IGameEngine
     {
+        /// <summary>
+        /// The default length a Bulls and Cows number should have.
+        /// </summary>
         public const int DefaultNumberLength = 4;
 
+        /// <summary>
+        /// This holds the single instance our Bulls and Cows game can have.
+        /// </summary>
         private static GameEngine game;
 
+        /// <summary>
+        /// This is a factory method instance, responsible for the creation of commands.
+        /// </summary>
         private readonly FactoryMethod commandCreator = new CommandCreator();
+
+        /// <summary>
+        /// All information about the leaderboard and the players inside it is stored here.
+        /// </summary>
         private readonly LeaderBoard<Player> leaderBoard = new LeaderBoard<Player>();
 
+        /// <summary>
+        /// All messages to be displayed to the player are provided here.
+        /// </summary>
         private IMessageDispatcher messageDispatcher = new MessageDispatcher();
+
+        /// <summary>
+        /// All game numbers are provided from here. Also validations 
+        /// </summary>
         private GameNumberProvider numberProvider = new GameNumberProvider();
+
+        /// <summary>
+        /// This holds the amount of attempts a player made to guess the number in his current game.
+        /// </summary>
         private int attempts;
+
+        /// <summary>
+        /// This is the original number to be guessed, generated for the current game.
+        /// </summary>
         private string generatedNumber;
+
+        /// <summary>
+        /// This shows if the game is currently running or not.
+        /// </summary>
         private bool gameOn;
+
+        /// <summary>
+        /// Used to provide help to the player, when he opts to cheat.
+        /// </summary>
         private Helper helper;
+
+        /// <summary>
+        /// The type of calculation strategy for a game is being stored here.
+        /// </summary>
         private ICalculateBullsAndCowsStrategy calculateBullsAndCowStrategy;
+
+        /// <summary>
+        /// Used to communicate to and from the player.
+        /// </summary>
         private InputOutput inputOutput;
 
         /// <summary>

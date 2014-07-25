@@ -4,7 +4,7 @@
     using Contracts;
 
     /// <summary>
-    /// 
+    /// A command to be executed when the player asks for help.
     /// </summary>
     public class CommandHelp : Command
     {
@@ -23,7 +23,7 @@
         /// <param name="inputOutput">The input and output to be used by the current command.</param>
         public override void Execute(InputOutput inputOutput)
         {
-            inputOutput.WriteLine(Engine.GetHelp());
+            inputOutput.WriteLine(this.Engine.GetHelp());
         }
     }
 }

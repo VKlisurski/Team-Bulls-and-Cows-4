@@ -10,7 +10,7 @@
         /// </summary>
         /// <param name="commandName">Name of the command to be created.</param>
         /// <param name="engine">Instance of the engine on which the command will be executed.</param>
-        /// <returns></returns>
+        /// <returns>The initialized command.</returns>
         public abstract Command Create(string commandName, GameEngine engine);
     }
 }

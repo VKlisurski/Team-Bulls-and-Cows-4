@@ -3,7 +3,7 @@
     using Contracts;
 
     /// <summary>
-    /// 
+    /// A command to be executed when the player asks to see the scoreboard.
     /// </summary>
     public class CommandTop : Command
     {
