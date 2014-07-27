@@ -20,8 +20,13 @@ namespace BullsAndCows.Tests.HelperTests
         public void GetHelpWithFiveCheatsUsedTest()
         {
             GameEngine.Instance.Helper.Cheats = 5;
+        }
 
-            GameEngine.Instance.Helper.GetHelp("1111");
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException), "The player cannont have a negative amount of cheats in a game.")]
+        public void ShouldNotAllowNegativeAmountOfCheats()
+        {
+            GameEngine.Instance.Helper.Cheats = -3;
         }
 
         [TestMethod]

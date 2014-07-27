@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>IPrinter.WriteLine (String, Object, Object, Object) Method</title>
+	<title>GameEngine.MessageDispatcher Property</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn10_lightweight/msdn10_lightweight.css"></link>
 	<script src="msdn10_lightweight/msdn10_lightweight.js" type="text/javascript"></script>
@@ -59,7 +59,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">BullAndCows Reference</div>
-  	<h1 class="title">IPrinter.WriteLine (String, Object, Object, Object) Method</h1>
+  	<h1 class="title">GameEngine.MessageDispatcher Property</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -73,10 +73,11 @@ function replaceTitleAndUrl(win, title, url) {
       <div id="mainBody">
         <p />
        
+        Gets or sets an instance used to provide messages to the player.
 
 
         <p /><strong>Namespace:</strong>
-<a href="topic_0000000000000022.html">BullsAndCowsGame.Contracts</a>
+<a href="topic_0000000000000000.html">BullsAndCowsGame</a>
 
 
 
@@ -131,7 +132,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Sub WriteLine( _&nbsp;<br />   ByVal <i>message</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">String</a>, _&nbsp;<br />   ByVal <i>arg0</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">Object</a>, _&nbsp;<br />   ByVal <i>arg1</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">Object</a>, _&nbsp;<br />   ByVal <i>arg2</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">Object</a> _&nbsp;<br />)</pre>			
+					<pre xml:space="preserve" class="brush: vb">Public Property MessageDispatcher() As <a target="_top" href=".html" onclick="this.target='';return true;">IMessageDispatcher</a> Implements  _&nbsp;<br />   <a target="_top" href="topic_000000000000001F.html" onclick="this.target='';return true;">IGameEngine.MessageDispatcher</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -167,7 +168,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp"><a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.void.aspx">void</a> WriteLine(&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">string</a> <i>message</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a> <i>arg0</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a> <i>arg1</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a> <i>arg2</i>&nbsp;<br />)</pre>			
+					<pre xml:space="preserve" class="brush: csharp">public <a target="_top" href=".html" onclick="this.target='';return true;">IMessageDispatcher</a> MessageDispatcher {get; set;}</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -203,7 +204,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">&nbsp;<br /><a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.void.aspx">void</a> WriteLine(&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">String</a>^ <i>message</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a>^ <i>arg0</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a>^ <i>arg1</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a>^ <i>arg2</i>&nbsp;<br />) </pre>			
+					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br />property <a target="_top" href=".html" onclick="this.target='';return true;">IMessageDispatcher</a>^ MessageDispatcher {&nbsp;<br /> <a target="_top" href=".html" onclick="this.target='';return true;">IMessageDispatcher</a>^ get( );&nbsp;<br /> void set(&nbsp;<br />   <a target="_top" href=".html" onclick="this.target='';return true;">IMessageDispatcher</a>^ value&nbsp;<br /> );&nbsp;<br />}</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -239,7 +240,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">function WriteLine(&nbsp;<br />    <i>message</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">String</a>,&nbsp;<br />    <i>arg0</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a>,&nbsp;<br />    <i>arg1</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a>,&nbsp;<br />    <i>arg2</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a>&nbsp;<br />);</pre>			
+					<pre xml:space="preserve" class="brush: js">public function get MessageDispatcher() : <a target="_top" href=".html" onclick="this.target='';return true;">IMessageDispatcher</a>;&nbsp;<br />public function set MessageDispatcher(value : <a target="_top" href=".html" onclick="this.target='';return true;">IMessageDispatcher</a>);</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -250,71 +251,10 @@ function replaceTitleAndUrl(win, title, url) {
 	</div>
 
 
-<h4 class="subHeading">
-	Parameters</h4><dl paramName="message">
-	<dt>
-		<span class="parameter">
-			message
-		</span>
-	</dt>
-	<dd>
-		<p>
-			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">string</a> 
-		</p>
-		<p>
-			 
-		</p>
-	</dd>
-</dl>
-<dl paramName="arg0">
-	<dt>
-		<span class="parameter">
-			arg0
-		</span>
-	</dt>
-	<dd>
-		<p>
-			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a> 
-		</p>
-		<p>
-			 
-		</p>
-	</dd>
-</dl>
-<dl paramName="arg1">
-	<dt>
-		<span class="parameter">
-			arg1
-		</span>
-	</dt>
-	<dd>
-		<p>
-			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a> 
-		</p>
-		<p>
-			 
-		</p>
-	</dd>
-</dl>
-<dl paramName="arg2">
-	<dt>
-		<span class="parameter">
-			arg2
-		</span>
-	</dt>
-	<dd>
-		<p>
-			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.object.aspx">object</a> 
-		</p>
-		<p>
-			 
-		</p>
-	</dd>
-</dl>
 
-<p />
-<p />
 
+	<h4 class="subHeading">
+		Implements</h4><a href="#">IGameEngine.MessageDispatcher</a><br />
 
 
 
@@ -406,8 +346,12 @@ function replaceTitleAndUrl(win, title, url) {
 		<div>
 			<h4 class="subHeading">
 				Reference</h4>
-			
-<a href="topic_0000000000000022.html">BullsAndCowsGame.Contracts Namespace</a><br />
+			<a href="topic_0000000000000033.html">GameEngine Class</a><br />
+<a href="topic_0000000000000033_members--.html">GameEngine Members</a><br />
+
+
+
+<a href="topic_0000000000000000.html">BullsAndCowsGame Namespace</a><br />
 
 
 			

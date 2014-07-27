@@ -138,26 +138,20 @@ namespace BullsAndCows.Tests.CommandTests
             }
         }
 
-        /*
+
         [TestMethod]
-        public void ShouldGetWelcomeMessage()
+        public void CommandRestartShouldResetAttempts()
         {
             FactoryMethod factory = new CommandCreator();
 
             string restartCommandName = "restart";
             Command restartCommand = factory.Create(restartCommandName, GameEngine.Instance);
-            string expectedMessage = "Welcome to “Bulls and Cows” game.\n\nPlease try to guess my secret 4-digit number.\nUse:\n'top' to view the top scoreboard\n'restart' to start a new game\n'help' to cheat\n'exit' to quit the game.";
 
-            using (StringWriter sw = new StringWriter())
-            {
-                Console.SetOut(sw);
-                restartCommand.Execute(GameEngine.Instance.InputOutput);
-                Assert.AreEqual<string>(expectedMessage, sw.ToString());
+            GameEngine.Instance.Attempts += 1;
 
-                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
-            }
+            restartCommand.Execute(GameEngine.Instance.InputOutput);
+
+            Assert.AreEqual<int>(0, GameEngine.Instance.Attempts);
         }
-         * 
-         * */
     }
 }

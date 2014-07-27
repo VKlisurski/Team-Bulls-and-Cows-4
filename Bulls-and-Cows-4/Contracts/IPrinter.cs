@@ -1,7 +1,7 @@
 ﻿namespace BullsAndCowsGame.Contracts
 {
     /// <summary>
-    /// Implementations of this are used to output messages to the player.
+    /// Implementations of this interface are used to output messages to the player.
     /// </summary>
     public interface IPrinter
     {
@@ -11,20 +11,15 @@
         /// <param name="message">The value to write.</param>
         void Write(string message);
 
-        void Write(string format, object arg0);
-
+        /// <summary>
+        /// Writes a new line to the standard output stream.
+        /// </summary>
         void WriteLine();
 
+        /// <summary>
+        /// Writes the specified string value to the standard output stream, followed by a new line.
+        /// </summary>
+        /// <param name="message">The value to write.</param>
         void WriteLine(string message);
-
-        void WriteLine(string message, object arg0);
-
-        void WriteLine(string message, object arg0, object arg1);
-
-        void WriteLine(string message, object arg0, object arg1, object arg2);
-
-        void WriteLine(string message, object arg0, object arg1, object arg2, object arg3);
-
-        void WriteLine(string message, params object[] args);
     }
 }

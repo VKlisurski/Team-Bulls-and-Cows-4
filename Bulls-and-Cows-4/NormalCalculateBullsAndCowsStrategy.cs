@@ -5,7 +5,7 @@
     using Contracts;
 
     /// <summary>
-    /// A strategy class, providing method for calculating the number of bulls and cows
+    /// A strategy class, providing method for calculating the number of bulls and cows for normal difficulty.
     /// </summary>
     public class NormalCalculateBullsAndCowsStrategy : ICalculateBullsAndCowsStrategy
     {

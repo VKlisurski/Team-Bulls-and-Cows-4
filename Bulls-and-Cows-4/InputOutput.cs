@@ -3,7 +3,7 @@
     using Contracts;
 
     /// <summary>
-    /// A facade class used reading data from the player and releasing data to the player.
+    /// A facade class used for reading data from the player and releasing data to the player.
     /// </summary>
     public class InputOutput
     {
@@ -36,6 +36,15 @@
         }
 
         /// <summary>
+        /// Writes a new line on the output/
+        /// </summary>
+        /// <param name="message">Message to be written.</param>
+        public void Write(string message)
+        {
+            this.printer.Write(message);
+        }
+
+        /// <summary>
         /// Writes a new line on the output.
         /// </summary>
         public void WriteLine()
@@ -50,45 +59,6 @@
         public void WriteLine(string message)
         {
             this.printer.WriteLine(message);
-        }
-
-        public void WriteLine(string message, object arg0)
-        {
-            this.printer.WriteLine(message, arg0);
-        }
-
-        public void WriteLine(string message, object arg0, object arg1)
-        {
-            this.printer.WriteLine(message, arg0, arg1);
-        }
-
-        public void WriteLine(string message, object arg0, object arg1, object arg2)
-        {
-            this.printer.WriteLine(message, arg0, arg1, arg2);
-        }
-
-        public void WriteLine(string message, object arg0, object arg1, object arg2, object arg3)
-        {
-            this.printer.WriteLine(message, arg0, arg1, arg2, arg3);
-        }
-
-        public void WriteLine(string message, params object[] args)
-        {
-            this.printer.WriteLine(message, args);
-        }
-
-        /// <summary>
-        /// Writes a new line on the output/
-        /// </summary>
-        /// <param name="message">Message to be written.</param>
-        public void Write(string message)
-        {
-            this.printer.Write(message);
-        }
-
-        public void Write(string message, object arg0)
-        {
-            this.printer.Write(message, arg0);
         }
 
         /// <summary>

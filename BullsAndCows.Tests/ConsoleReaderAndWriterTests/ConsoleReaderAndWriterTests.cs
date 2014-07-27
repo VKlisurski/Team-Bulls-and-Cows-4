@@ -26,23 +26,6 @@ namespace BullsAndCows.Tests.ConsoleReaderAndWriterTests
         }
 
         [TestMethod]
-        public void ShouldWriteCorrectMessageAndObjectOnSingleLine()
-        {
-            IPrinter printer = new ConsolePrinter(); 
-            object testObject = new Object();
-            string expectedMessage = string.Format("{0}", testObject);
-
-            using (StringWriter sw = new StringWriter())
-            {
-                Console.SetOut(sw);
-                string message = "{0}";
-                printer.Write(message, testObject);
-                Assert.AreEqual<string>(expectedMessage, sw.ToString());
-                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
-            }
-        }
-
-        [TestMethod]
         public void ShouldWriteCorrectMessageOnNewLine()
         {
             IPrinter printer = new ConsolePrinter();
@@ -53,23 +36,6 @@ namespace BullsAndCows.Tests.ConsoleReaderAndWriterTests
                 Console.SetOut(sw);
                 string message = "Test message on a new line.";
                 printer.WriteLine(message);
-                Assert.AreEqual<string>(expectedMessage, sw.ToString());
-                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
-            }
-        }
-
-        [TestMethod]
-        public void ShouldWriteCorrectMessageAndObjectOnNewLine()
-        {
-            IPrinter printer = new ConsolePrinter();
-            object testObject = new Object();
-            string expectedMessage = string.Format("{0}\r\n", testObject);
-
-            using (StringWriter sw = new StringWriter())
-            {
-                Console.SetOut(sw);
-                string message = "{0}";
-                printer.WriteLine(message, testObject);
                 Assert.AreEqual<string>(expectedMessage, sw.ToString());
                 Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
             }

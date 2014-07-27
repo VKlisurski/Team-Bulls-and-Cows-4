@@ -122,7 +122,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("The number of attemps in a game cannot be a negative integer.");
+                    throw new ArgumentException(string.Format("The number of attemps in a game cannot be a negative integer. You entered: {0}.", value));
                 }
 
                 this.attempts = value;
@@ -249,7 +249,7 @@
 
             while (this.gameOn)
             {
-                this.inputOutput.Write(this.MessageDispatcher.GetEnterCommandMessage());
+                this.InputOutput.Write(this.MessageDispatcher.GetEnterCommandMessage());
                 string playerInput = this.inputOutput.ReadLine();
 
                 if (this.numberProvider.IsValidNumber(playerInput, GameEngine.DefaultNumberLength))
@@ -282,7 +282,7 @@
         public void Exit()
         {
             this.GameOn = false;
-            this.inputOutput.WriteLine(this.MessageDispatcher.GetGoodbyeMessage());
+            this.InputOutput.WriteLine(this.MessageDispatcher.GetGoodbyeMessage());
         }
 
         /// <summary>
@@ -312,10 +312,10 @@
         {
             if (this.Helper.Cheats == 0)
             {
-                this.inputOutput.Write(this.MessageDispatcher.GetEnterNameMessage());
+                this.InputOutput.Write(this.MessageDispatcher.GetEnterNameMessage());
                 string playerName = this.inputOutput.ReadLine();
                 this.AddPlayerToScoreboard(playerName);
-                this.inputOutput.WriteLine(this.MessageDispatcher.GetScoreBoard(this.leaderBoard));
+                this.InputOutput.WriteLine(this.MessageDispatcher.GetScoreBoard(this.leaderBoard));
             }
             else
             {

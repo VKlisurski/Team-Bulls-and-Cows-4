@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>LeaderBoard&lt;T&gt; Constructor (Int32) </title>
+	<title>MessageDispatcher.GetWrongNumberMessage Method</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn10_lightweight/msdn10_lightweight.css"></link>
 	<script src="msdn10_lightweight/msdn10_lightweight.js" type="text/javascript"></script>
@@ -59,7 +59,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">BullAndCows Reference</div>
-  	<h1 class="title">LeaderBoard&lt;T&gt; Constructor (Int32) </h1>
+  	<h1 class="title">MessageDispatcher.GetWrongNumberMessage Method</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -73,7 +73,7 @@ function replaceTitleAndUrl(win, title, url) {
       <div id="mainBody">
         <p />
        
-        Initializes a new instance of the BullsAndCowsGame.LeaderBoard class.
+        Returns a message with information about how many bulls and how many cows did the guess number have.
 
 
         <p /><strong>Namespace:</strong>
@@ -132,7 +132,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Public Sub New( _&nbsp;<br />   ByVal <i>maxCountOfStoredData</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">Integer</a> _&nbsp;<br />)</pre>			
+					<pre xml:space="preserve" class="brush: vb">Public Function GetWrongNumberMessage( _&nbsp;<br />   ByVal <i>bullsCount</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">Integer</a>, _&nbsp;<br />   ByVal <i>cowsCount</i> As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">Integer</a> _&nbsp;<br />) As <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">String</a> Implements  _&nbsp;<br />   <a target="_top" href="topic_0000000000000026.html" onclick="this.target='';return true;">IMessageDispatcher.GetWrongNumberMessage</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -168,7 +168,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">public LeaderBoard(&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a> <i>maxCountOfStoredData</i>&nbsp;<br />)</pre>			
+					<pre xml:space="preserve" class="brush: csharp">public <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">string</a> GetWrongNumberMessage(&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a> <i>bullsCount</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a> <i>cowsCount</i>&nbsp;<br />)</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -204,7 +204,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br />LeaderBoard(&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a> <i>maxCountOfStoredData</i>&nbsp;<br />) </pre>			
+					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br /><a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">String</a>^ GetWrongNumberMessage(&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a> <i>bullsCount</i>,&nbsp;<br />   <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a> <i>cowsCount</i>&nbsp;<br />) </pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -240,7 +240,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">public function LeaderBoard(&nbsp;<br />    <i>maxCountOfStoredData</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a>&nbsp;<br />);</pre>			
+					<pre xml:space="preserve" class="brush: js">public function GetWrongNumberMessage(&nbsp;<br />    <i>bullsCount</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a>,&nbsp;<br />    <i>cowsCount</i> : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a>&nbsp;<br />) : <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.string.aspx">String</a>;</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -252,10 +252,10 @@ function replaceTitleAndUrl(win, title, url) {
 
 
 <h4 class="subHeading">
-	Parameters</h4><dl paramName="maxCountOfStoredData">
+	Parameters</h4><dl paramName="bullsCount">
 	<dt>
 		<span class="parameter">
-			maxCountOfStoredData
+			bullsCount
 		</span>
 	</dt>
 	<dd>
@@ -263,7 +263,22 @@ function replaceTitleAndUrl(win, title, url) {
 			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a> 
 		</p>
 		<p>
-			 
+			How many bulls did the guess number have. 
+		</p>
+	</dd>
+</dl>
+<dl paramName="cowsCount">
+	<dt>
+		<span class="parameter">
+			cowsCount
+		</span>
+	</dt>
+	<dd>
+		<p>
+			Type: <a target="_top" href="http://msdn2.microsoft.com/en-us/library/system.int32.aspx">int</a> 
+		</p>
+		<p>
+			How many cows did the guess number have. 
 		</p>
 	</dd>
 </dl>
@@ -271,6 +286,12 @@ function replaceTitleAndUrl(win, title, url) {
 <p />
 <p />
 
+	<h4 class="subHeading">
+		Return Value</h4>
+  A message holding information if how many bulls and cows were in the guess number.
+
+	<h4 class="subHeading">
+		Implements</h4><a href="#">IMessageDispatcher.GetWrongNumberMessage</a><br />
 
 
 
@@ -362,8 +383,8 @@ function replaceTitleAndUrl(win, title, url) {
 		<div>
 			<h4 class="subHeading">
 				Reference</h4>
-			<a href="topic_0000000000000064.html">LeaderBoard&lt;T&gt; Class</a><br />
-<a href="topic_0000000000000064_members--.html">LeaderBoard&lt;T&gt; Members</a><br />
+			<a href="topic_000000000000005E.html">MessageDispatcher Class</a><br />
+<a href="topic_000000000000005E_members--.html">MessageDispatcher Members</a><br />
 
 
 

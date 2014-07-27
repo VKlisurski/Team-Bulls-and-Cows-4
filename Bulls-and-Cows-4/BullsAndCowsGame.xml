@@ -97,7 +97,7 @@ A command to be executed when the player wants to restart the game.</summary>
       <summary>
 Initializes a new instance of the BullsAndCowsGame.CommandRestart class.</summary>
       <param name="engine">
-The engine on which the current command would be executed on.</param>
+The engine on which the current command would be executed.</param>
     </member>
     <member name="M:BullsAndCowsGame.CommandRestart.Execute(BullsAndCowsGame.InputOutput)">
       <summary>
@@ -131,61 +131,15 @@ Writes the specified string value to the standard output stream.</summary>
       <param name="message">
 The value to write.</param>
     </member>
-    <member name="M:BullsAndCowsGame.ConsolePrinter.Write(System.String,System.Object)">
-      <summary>
-Writes the specified string value to the output defined by the implementation of this interface.</summary>
-      <param name="format">
-</param>
-      <param name="arg0">
-</param>
-    </member>
     <member name="M:BullsAndCowsGame.ConsolePrinter.WriteLine">
+      <summary>
+Writes a new line to the standard output stream.</summary>
     </member>
     <member name="M:BullsAndCowsGame.ConsolePrinter.WriteLine(System.String)">
+      <summary>
+Writes the specified string value to the standard output stream, followed by a new line.</summary>
       <param name="message">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.ConsolePrinter.WriteLine(System.String,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.ConsolePrinter.WriteLine(System.String,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.ConsolePrinter.WriteLine(System.String,System.Object,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-      <param name="arg2">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.ConsolePrinter.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-      <param name="arg2">
-</param>
-      <param name="arg3">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.ConsolePrinter.WriteLine(System.String,System.Object[])">
-      <param name="message">
-</param>
-      <param name="args">
-</param>
+The value to write.</param>
     </member>
     <member name="T:BullsAndCowsGame.ConsoleReader">
       <summary>
@@ -262,16 +216,38 @@ How many bulls did the guess number have.</param>
 How many cows did the guess number have.</param>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IMessageDispatcher.GetWelcomeMessage">
+      <summary>
+A welcome message to be displayed to the player when he starts a new game.</summary>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IMessageDispatcher.GetGoodbyeMessage">
+      <summary>
+Returns a goodbye message to be displayed to the player.</summary>
+      <returns>
+The goodbye message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IMessageDispatcher.GetInvalidCommandMessage">
+      <summary>
+Returns a message notifying the player he entered an invalid command.</summary>
+      <returns>
+The invalid command message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IMessageDispatcher.GetNoCheatersMessage">
+      <summary>
+Returns a message notifying the player he is not allowed to cheat anymore.</summary>
+      <returns>
+The "not allowed to cheat anymore" message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IMessageDispatcher.GetEnterNameMessage">
+      <summary>
+Returns a message asking the player to enter his name.</summary>
+      <returns>
+The "enter name" message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IMessageDispatcher.GetEnterCommandMessage">
+      <summary>
+Returns a message asking the player to enter command.</summary>
+      <returns>
+The "enter command" message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IPrinter.Write(System.String)">
       <summary>
@@ -279,59 +255,15 @@ Writes the specified string value to the output defined by the implementation of
       <param name="message">
 The value to write.</param>
     </member>
-    <member name="M:BullsAndCowsGame.Contracts.IPrinter.Write(System.String,System.Object)">
-      <param name="format">
-</param>
-      <param name="arg0">
-</param>
-    </member>
     <member name="M:BullsAndCowsGame.Contracts.IPrinter.WriteLine">
+      <summary>
+Writes a new line to the standard output stream.</summary>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IPrinter.WriteLine(System.String)">
+      <summary>
+Writes the specified string value to the standard output stream, followed by a new line.</summary>
       <param name="message">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.Contracts.IPrinter.WriteLine(System.String,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.Contracts.IPrinter.WriteLine(System.String,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.Contracts.IPrinter.WriteLine(System.String,System.Object,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-      <param name="arg2">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.Contracts.IPrinter.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-      <param name="arg2">
-</param>
-      <param name="arg3">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.Contracts.IPrinter.WriteLine(System.String,System.Object[])">
-      <param name="message">
-</param>
-      <param name="args">
-</param>
+The value to write.</param>
     </member>
     <member name="M:BullsAndCowsGame.Contracts.IReader.ReadLine">
       <summary>
@@ -368,6 +300,10 @@ Gets or sets the amount of guess attemptes the player made in a game.</summary>
     <member name="P:BullsAndCowsGame.GameEngine.Helper">
       <summary>
 Gets or sets the helper class to be used by the game engine.</summary>
+    </member>
+    <member name="P:BullsAndCowsGame.GameEngine.InputOutput">
+      <summary>
+Gets or sets the InputOutput provider of the game engine</summary>
     </member>
     <member name="P:BullsAndCowsGame.GameEngine.GameOn">
       <summary>
@@ -471,7 +407,7 @@ The original generated number.</param>
     </member>
     <member name="T:BullsAndCowsGame.InputOutput">
       <summary>
-A facade class used reading data from the player and releasing data to the player.</summary>
+A facade class used for reading data from the player and releasing data to the player.</summary>
     </member>
     <member name="M:BullsAndCowsGame.InputOutput.#ctor">
       <summary>
@@ -485,6 +421,12 @@ The reader to be used for input.</param>
       <param name="printer">
 The printer to be used for output.</param>
     </member>
+    <member name="M:BullsAndCowsGame.InputOutput.Write(System.String)">
+      <summary>
+Writes a new line on the output/</summary>
+      <param name="message">
+Message to be written.</param>
+    </member>
     <member name="M:BullsAndCowsGame.InputOutput.WriteLine">
       <summary>
 Writes a new line on the output.</summary>
@@ -494,60 +436,6 @@ Writes a new line on the output.</summary>
 Writes a new line on the output with new line attached at the end.</summary>
       <param name="message">
 Message to be written.</param>
-    </member>
-    <member name="M:BullsAndCowsGame.InputOutput.WriteLine(System.String,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.InputOutput.WriteLine(System.String,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.InputOutput.WriteLine(System.String,System.Object,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-      <param name="arg2">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.InputOutput.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
-      <param name="arg1">
-</param>
-      <param name="arg2">
-</param>
-      <param name="arg3">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.InputOutput.WriteLine(System.String,System.Object[])">
-      <param name="message">
-</param>
-      <param name="args">
-</param>
-    </member>
-    <member name="M:BullsAndCowsGame.InputOutput.Write(System.String)">
-      <summary>
-Writes a new line on the output/</summary>
-      <param name="message">
-Message to be written.</param>
-    </member>
-    <member name="M:BullsAndCowsGame.InputOutput.Write(System.String,System.Object)">
-      <param name="message">
-</param>
-      <param name="arg0">
-</param>
     </member>
     <member name="M:BullsAndCowsGame.InputOutput.ReadLine">
       <summary>
@@ -595,23 +483,47 @@ Resets the leaderboard.</summary>
     </member>
     <member name="T:BullsAndCowsGame.MessageDispatcher">
       <summary>
-An instance of this object is used to return messages to the player.</summary>
+An instance of this object is used to return messages for the player.</summary>
     </member>
     <member name="M:BullsAndCowsGame.MessageDispatcher.#ctor">
       <summary>
 Initializes a new instance of the BullsAndCows.MessageDispatcher class.</summary>
     </member>
     <member name="M:BullsAndCowsGame.MessageDispatcher.GetGoodbyeMessage">
+      <summary>
+Returns a goodbye message to be displayed to the player.</summary>
+      <returns>
+The goodbye message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.MessageDispatcher.GetInvalidCommandMessage">
+      <summary>
+Returns a message notifying the player he entered an invalid command.</summary>
+      <returns>
+The invalid command message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.MessageDispatcher.GetNoCheatersMessage">
+      <summary>
+Returns a message notifying the player he is not allowed to cheat anymore.</summary>
+      <returns>
+The "not allowed to cheat anymore" message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.MessageDispatcher.GetEnterNameMessage">
+      <summary>
+Returns a message asking the player to enter his name.</summary>
+      <returns>
+The "enter name" message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.MessageDispatcher.GetEnterCommandMessage">
+      <summary>
+Returns a message asking the player to enter command.</summary>
+      <returns>
+The "enter command" message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.MessageDispatcher.GetWelcomeMessage">
+      <summary>
+Returns a message, welcoming the player to the game.</summary>
+      <returns>
+The "welcome" message.</returns>
     </member>
     <member name="M:BullsAndCowsGame.MessageDispatcher.GetWrongNumberMessage(System.Int32,System.Int32)">
       <summary>
@@ -643,7 +555,7 @@ How many attempts did the player make to guess the number.</param>
     </member>
     <member name="T:BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy">
       <summary>
-A strategy class, providing method for calculating the number of bulls and cows</summary>
+A strategy class, providing method for calculating the number of bulls and cows for normal difficulty.</summary>
     </member>
     <member name="M:BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy.ExecuteStrategy(System.String,System.String)">
       <summary>

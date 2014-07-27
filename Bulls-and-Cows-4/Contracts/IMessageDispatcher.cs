@@ -28,16 +28,39 @@
         /// <returns>A message holding information if how many bulls and cows were in the guess number.</returns>
         string GetWrongNumberMessage(int bullsCount, int cowsCount);
 
+        /// <summary>
+        /// A welcome message to be displayed to the player when he starts a new game.
+        /// </summary>
         string GetWelcomeMessage();
 
+        /// <summary>
+        /// Returns a goodbye message to be displayed to the player.
+        /// </summary>
+        /// <returns>The goodbye message.</returns>
         string GetGoodbyeMessage();
 
+        /// <summary>
+        /// Returns a message notifying the player he entered an invalid command.
+        /// </summary>
+        /// <returns>The invalid command message.</returns>
         string GetInvalidCommandMessage();
 
+        /// <summary>
+        /// Returns a message notifying the player he is not allowed to cheat anymore.
+        /// </summary>
+        /// <returns>The "not allowed to cheat anymore" message.</returns>
         string GetNoCheatersMessage();
 
+        /// <summary>
+        /// Returns a message asking the player to enter his name.
+        /// </summary>
+        /// <returns>The "enter name" message.</returns>
         string GetEnterNameMessage();
 
+        /// <summary>
+        /// Returns a message asking the player to enter command.
+        /// </summary>
+        /// <returns>The "enter command" message.</returns>
         string GetEnterCommandMessage();
     }
 }

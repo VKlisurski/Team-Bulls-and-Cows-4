@@ -5,7 +5,7 @@
     using Contracts;
 
     /// <summary>
-    /// An instance of this object is used to return messages to the player.
+    /// An instance of this object is used to return messages for the player.
     /// </summary>
     public class MessageDispatcher : IMessageDispatcher
     {
@@ -46,31 +46,55 @@
         {
         }
 
+        /// <summary>
+        /// Returns a goodbye message to be displayed to the player.
+        /// </summary>
+        /// <returns>The goodbye message.</returns>
         public string GetGoodbyeMessage()
         {
             return GoodByeMessage;
         }
 
+        /// <summary>
+        /// Returns a message notifying the player he entered an invalid command.
+        /// </summary>
+        /// <returns>The invalid command message.</returns>
         public string GetInvalidCommandMessage()
         {
             return InvalidCommandMessage;
         }
 
+        /// <summary>
+        /// Returns a message notifying the player he is not allowed to cheat anymore.
+        /// </summary>
+        /// <returns>The "not allowed to cheat anymore" message.</returns>
         public string GetNoCheatersMessage()
         {
             return NoCheatersMessage;
         }
 
+        /// <summary>
+        /// Returns a message asking the player to enter his name.
+        /// </summary>
+        /// <returns>The "enter name" message.</returns>
         public string GetEnterNameMessage()
         {
             return EnterNameMessage;
         }
 
+        /// <summary>
+        /// Returns a message asking the player to enter command.
+        /// </summary>
+        /// <returns>The "enter command" message.</returns>
         public string GetEnterCommandMessage()
         {
             return EnterCommandMessage;
         }
 
+        /// <summary>
+        /// Returns a message, welcoming the player to the game.
+        /// </summary>
+        /// <returns>The "welcome" message.</returns>
         public string GetWelcomeMessage()
         {
             return WelcomeMessage;

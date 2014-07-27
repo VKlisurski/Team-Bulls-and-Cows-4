@@ -44,13 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BullsAndCows.cs" />
-    <Compile Include="Command.cs" />
-    <Compile Include="CommandExit.cs" />
-    <Compile Include="CommandCreator.cs" />
-    <Compile Include="CommandHelp.cs" />
-    <Compile Include="CommandOther.cs" />
-    <Compile Include="CommandRestart.cs" />
-    <Compile Include="CommandTop.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\CommandExit.cs" />
+    <Compile Include="Commands\CommandCreator.cs" />
+    <Compile Include="Commands\CommandHelp.cs" />
+    <Compile Include="Commands\CommandOther.cs" />
+    <Compile Include="Commands\CommandRestart.cs" />
+    <Compile Include="Commands\CommandTop.cs" />
     <Compile Include="ConsolePrinter.cs" />
     <Compile Include="ConsoleReader.cs" />
     <Compile Include="Contracts\IGameEngine.cs" />
