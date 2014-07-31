@@ -21,7 +21,7 @@
         /// <summary>
         /// This is a factory method instance, responsible for the creation of commands.
         /// </summary>
-        private readonly FactoryMethod commandCreator = new CommandCreator();
+        private readonly CommandFactoryMethod commandCreator = new CommandCreator();
 
         /// <summary>
         /// All information about the leaderboard and the players inside it is stored here.

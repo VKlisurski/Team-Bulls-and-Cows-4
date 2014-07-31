@@ -55,7 +55,7 @@
     <Compile Include="ConsoleReader.cs" />
     <Compile Include="Contracts\IGameEngine.cs" />
     <Compile Include="Contracts\IMessageDispatcher.cs" />
-    <Compile Include="FactoryMethod.cs" />
+    <Compile Include="CommandFactoryMethod.cs" />
     <Compile Include="GameEngine.cs" />
     <Compile Include="GuessResult.cs" />
     <Compile Include="Helper.cs" />

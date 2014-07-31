@@ -3,7 +3,7 @@
     /// <summary>
     /// A factory class resposible for the creation of commands.
     /// </summary>
-    public class CommandCreator : FactoryMethod
+    public class CommandCreator : CommandFactoryMethod
     {
         private const string TopCommand = "top";
         private const string RestartCommand = "restart";

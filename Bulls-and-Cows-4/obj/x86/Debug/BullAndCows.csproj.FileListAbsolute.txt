@@ -38,3 +38,8 @@ D:\Academy\KPK\Teamwork\bulls and cows\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGa
 D:\Academy\KPK\Teamwork\bulls and cows\Bulls-and-Cows-4\obj\x86\Debug\BullAndCows.csprojResolveAssemblyReference.cache
 D:\Academy\KPK\Teamwork\bulls and cows\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.exe
 D:\Academy\KPK\Teamwork\bulls and cows\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.pdb
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.exe
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\Bulls-and-Cows-4\bin\Debug\BullsAndCowsGame.pdb
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\Bulls-and-Cows-4\obj\x86\Debug\BullAndCows.csprojResolveAssemblyReference.cache
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.exe
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\Bulls-and-Cows-4\obj\x86\Debug\BullsAndCowsGame.pdb

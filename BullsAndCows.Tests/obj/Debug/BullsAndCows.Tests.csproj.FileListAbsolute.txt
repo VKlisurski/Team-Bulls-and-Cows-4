@@ -53,3 +53,10 @@ D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\bin\Debug\normnfkd.nlp
 D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
 D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
 D:\Academy\KPK\Teamwork\bulls and cows\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.dll
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\BullsAndCows.Tests\bin\Debug\BullsAndCows.Tests.pdb
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.exe
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\BullsAndCows.Tests\bin\Debug\BullsAndCowsGame.pdb
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.dll
+C:\Users\Daniel Todorov\Desktop\Telerik Academy\Quality_Code\KPK - Teamwork - last\BullsAndCows.Tests\obj\Debug\BullsAndCows.Tests.pdb

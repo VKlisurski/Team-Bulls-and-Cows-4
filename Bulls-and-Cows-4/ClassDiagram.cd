@@ -8,104 +8,178 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BullsAndCowsGame.Command" Collapsed="true">
-    <Position X="7" Y="0.5" Width="1.5" />
+    <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>Command.cs</FileName>
+      <FileName>Commands\Command.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BullsAndCowsGame.CommandCreator" Collapsed="true">
-    <Position X="2.25" Y="4.75" Width="1.5" />
+    <Position X="0.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>CommandCreator.cs</FileName>
+      <HashCode>AAAAAAAAIQAAAAAAAABAAAAAAAAAAEAAAAACAAAAAAA=</HashCode>
+      <FileName>Commands\CommandCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BullsAndCowsGame.CommandExit" Collapsed="true">
-    <Position X="9.25" Y="1.75" Width="1.5" />
+    <Position X="7.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CommandExit.cs</FileName>
+      <FileName>Commands\CommandExit.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BullsAndCowsGame.CommandHelp" Collapsed="true">
-    <Position X="2.5" Y="1.75" Width="1.5" />
+    <Position X="0.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CommandHelp.cs</FileName>
+      <FileName>Commands\CommandHelp.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BullsAndCowsGame.CommandOther" Collapsed="true">
-    <Position X="4.75" Y="1.75" Width="1.5" />
+    <Position X="3" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CommandOther.cs</FileName>
+      <FileName>Commands\CommandOther.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BullsAndCowsGame.CommandRestart" Collapsed="true">
-    <Position X="7" Y="1.75" Width="1.5" />
+    <Position X="5.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CommandRestart.cs</FileName>
+      <FileName>Commands\CommandRestart.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BullsAndCowsGame.CommandTop" Collapsed="true">
-    <Position X="11.5" Y="1.75" Width="1.5" />
+    <Position X="9.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CommandTop.cs</FileName>
+      <FileName>Commands\CommandTop.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BullsAndCowsGame.FactoryMethod" Collapsed="true">
-    <Position X="2.25" Y="3.5" Width="1.5" />
+  <Class Name="BullsAndCowsGame.CommandFactoryMethod" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>FactoryMethod.cs</FileName>
+      <FileName>CommandFactoryMethod.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BullsAndCowsGame.GameEngine" Collapsed="true">
-    <Position X="15.75" Y="0.5" Width="1.5" />
+  <Class Name="BullsAndCowsGame.GameEngine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EQEAAAAAQCAEECBAAAIAAAwAAAAQAUAIaAAAAwAIAAA=</HashCode>
+      <HashCode>EQBBAAAQQCAEEABABAAAAAQAQAAAAEAIaAAAAgkICQA=</HashCode>
       <FileName>GameEngine.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="BullsAndCowsGame.Helper" Collapsed="true">
-    <Position X="17.5" Y="0.5" Width="1.5" />
+    <Position X="14" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAABAAAAAQAAAAAAAgAAAAAAAAAAIAAAAACEA=</HashCode>
       <FileName>Helper.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BullsAndCowsGame.LeaderBoard&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="1.5" Width="1.5" />
+    <Position X="14" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACIAAAAAAKAABBCABQCAIAQAAAAAAAAAIAAQAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAKAABBCABACAIAQAAAAAAAAEsAAQAAAAAAA=</HashCode>
       <FileName>LeaderBoard.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="BullsAndCowsGame.Player" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="15.75" Y="1.5" Width="1.5" />
+    <Position X="14" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAQAAAAAAAQAAAAEAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy" Collapsed="true">
-    <Position X="4.5" Y="4.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>NormalCalculateBullsAndCowsStrategy.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Interface Name="BullsAndCowsGame.ICalculateBullsAndCowsStrategy" Collapsed="true">
-    <Position X="4.5" Y="3.5" Width="1.5" />
+  <Class Name="BullsAndCowsGame.NormalCalculateBullsAndCowsStrategy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CalculateBullsAndCowsStrategy.cs</FileName>
+      <FileName>NormalCalculateBullsAndCowsStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BullsAndCowsGame.ConsolePrinter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ConsolePrinter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BullsAndCowsGame.ConsoleReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConsoleReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BullsAndCowsGame.GameNumberProvider" Collapsed="true">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>GameNumberProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BullsAndCowsGame.GuessResult" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>GuessResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BullsAndCowsGame.InputOutput" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEQAAE=</HashCode>
+      <FileName>InputOutput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BullsAndCowsGame.MessageDispatcher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEAIAIAhAAAIAAAAAAAAAAEAAAEQAAAggGAQAAAA=</HashCode>
+      <FileName>MessageDispatcher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="BullsAndCowsGame.Contracts.ICalculateBullsAndCowsStrategy" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\ICalculateBullsAndCowsStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BullsAndCowsGame.Contracts.IGameEngine" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAgACQA=</HashCode>
+      <FileName>Contracts\IGameEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BullsAndCowsGame.Contracts.IMessageDispatcher" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAIAIAgAAAAAAAAAAAAAAEAAAAAAAAAgGAQAAAA=</HashCode>
+      <FileName>Contracts\IMessageDispatcher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BullsAndCowsGame.Contracts.IPrinter" Collapsed="true">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Contracts\IPrinter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BullsAndCowsGame.Contracts.IReader" Collapsed="true">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IReader.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

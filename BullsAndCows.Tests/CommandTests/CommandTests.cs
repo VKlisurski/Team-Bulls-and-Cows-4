@@ -13,7 +13,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void TopCommandTest()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             Assert.IsInstanceOfType(factory.Create("top", GameEngine.Instance), typeof(CommandTop));
         }
@@ -21,7 +21,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void StartNewGameCommandTest()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             Assert.IsInstanceOfType(factory.Create("restart", GameEngine.Instance), typeof(CommandRestart));
         }
@@ -29,7 +29,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void HelpCommandTest()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             Assert.IsInstanceOfType(factory.Create("help", GameEngine.Instance), typeof(CommandHelp));
         }
@@ -37,7 +37,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void HelpCommandShouldReturnCorrectHelp()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
             string helpCommandName = "help";
 
             Command helpCommand = factory.Create(helpCommandName, GameEngine.Instance);
@@ -60,7 +60,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void ExitCommandTest()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             Assert.IsInstanceOfType(factory.Create("exit", GameEngine.Instance), typeof(CommandExit));
         }
@@ -68,7 +68,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void OtherCommandTest()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             Assert.IsInstanceOfType(factory.Create("asdasf", GameEngine.Instance), typeof(CommandOther));
         }
@@ -76,7 +76,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void ShouldGetInvalidCommandMessage()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             string invalidCommandName = "invalid command string";
             Command otherCommand = factory.Create(invalidCommandName, GameEngine.Instance);
@@ -95,7 +95,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void ShouldGetGoodByeMessage()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             string exitCommandName = "exit";
             Command otherCommand = factory.Create(exitCommandName, GameEngine.Instance);
@@ -114,7 +114,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void ShouldGetOnePlayerInLeaderBoardMessage()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             string topCommandName = "top";
             Command topCommand = factory.Create(topCommandName, GameEngine.Instance);
@@ -142,7 +142,7 @@ namespace BullsAndCows.Tests.CommandTests
         [TestMethod]
         public void CommandRestartShouldResetAttempts()
         {
-            FactoryMethod factory = new CommandCreator();
+            CommandFactoryMethod factory = new CommandCreator();
 
             string restartCommandName = "restart";
             Command restartCommand = factory.Create(restartCommandName, GameEngine.Instance);

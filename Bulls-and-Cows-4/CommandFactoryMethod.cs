@@ -3,7 +3,7 @@
     /// <summary>
     /// Implementation of the Factory Method pattern used to instantiate commands.
     /// </summary>
-    public abstract class FactoryMethod
+    public abstract class CommandFactoryMethod
     {
         /// <summary>
         /// Creates a command by given name and engine.

@@ -22,7 +22,7 @@
         /// <summary>
         /// A message to be sent out to the player if he used cheats during the game. Cheaters are not accepted in the scoreboard.
         /// </summary>
-        public const string NoCheatersMessage = "Cheaters are not allowed to enter the top scoreboard.";
+        public const string NoCheaterMessage = "Cheaters are not allowed to enter the top scoreboard.";
 
         /// <summary>
         /// A message to be displayed when it's time for the player to enter his name for the scoreboard.
@@ -70,7 +70,7 @@
         /// <returns>The "not allowed to cheat anymore" message.</returns>
         public string GetNoCheatersMessage()
         {
-            return NoCheatersMessage;
+            return NoCheaterMessage;
         }
 
         /// <summary>
